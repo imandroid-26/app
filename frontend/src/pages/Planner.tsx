@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { PANDALS, pandalById } from "@/lib/pandals";
 import type { Pandal } from "@/lib/types";
+import { DAY_ROUTES, PUJA_DAYS, dayLabel, shortDate } from "@/lib/puja";
 import { usePlannerStops, useItineraries, optimizeOrder, routeLegs } from "@/lib/planner";
 import { multiStopLinks } from "@/lib/directions";
 import type { TravelMode } from "@/lib/directions";
@@ -34,8 +35,13 @@ export default function Planner() {
   const [useMyLocation, setUseMyLocation] = useState(false);
   const [suggest, setSuggest] = useState("");
 
-  // absorb a shared link ?stops=a,b,c once
+  // absorb a shared link ?stops=a,b,c or a banner link ?day=<key> once
   useEffect(() => {
+    const dayKey = params.get("day");
+    if (dayKey) {
+      loadDay(dayKey);
+      return;
+    }
     const shared = params.get("stops");
     if (!shared) return;
     const ids = shared.split(",").filter((x) => pandalById(x));
@@ -44,6 +50,18 @@ export default function Planner() {
     toast(`Loaded shared route with ${ids.length} stops`, { description: "Edit it below or open the links." });
     // eslint-disable-next-line react-hooks/exhaustive-deps -- run once per shared param
   }, [params]);
+
+  const [activeDay, setActiveDay] = useState<string | null>(null);
+
+  function loadDay(dayKey: string) {
+    const route = DAY_ROUTES.find((r) => r.dayKey === dayKey);
+    const day = PUJA_DAYS.find((d) => d.key === dayKey);
+    if (!route || !day) return;
+    const stopsP = route.stopIds.map((x) => pandalById(x)).filter((p): p is Pandal => !!p);
+    planner.setStops(optimizeOrder(null, stopsP).map((p) => p.id));
+    setActiveDay(dayKey);
+    toast(`${dayLabel(day)} route loaded`, { description: `${route.title} · ${stopsP.length} stops, ordered for walking.` });
+  }
 
   const ordered: Pandal[] = useMemo(
     () => planner.stops.map((x) => pandalById(x)).filter((p): p is Pandal => !!p),
@@ -87,6 +105,40 @@ export default function Planner() {
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
         {/* ---------------- left: stops + controls ---------------- */}
         <div className="flex flex-col gap-6 lg:col-span-2">
+          <section className="rounded-xl border border-gold/40 bg-card p-4" data-testid="planner-day-picker">
+            <h2 className="mb-1 font-heading text-lg font-bold">Pick a puja day</h2>
+            <p className="mb-3 text-xs text-muted-foreground">
+              A ready route for each day — two Saptamis this year. Loading one replaces your current stops.
+            </p>
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+              {PUJA_DAYS.map((d) => {
+                const r = DAY_ROUTES.find((x) => x.dayKey === d.key);
+                const active = activeDay === d.key;
+                return (
+                  <button
+                    key={d.key}
+                    type="button"
+                    data-testid={`planner-day-${d.key}`}
+                    aria-pressed={active}
+                    onClick={() => loadDay(d.key)}
+                    className={cn(
+                      "flex flex-col items-start rounded-lg border px-3 py-2 text-left transition-[background-color,border-color,transform] duration-150 active:scale-[0.98]",
+                      active ? "border-primary bg-primary/10" : "border-border/70 hover:border-gold/60",
+                    )}
+                  >
+                    <span className="text-sm font-semibold">{dayLabel(d)}</span>
+                    <span className="text-xs text-muted-foreground">{shortDate(d.date)}</span>
+                    {r && <span className="mt-1 text-xs text-gold-dark">{r.title}</span>}
+                  </button>
+                );
+              })}
+            </div>
+            {activeDay && (
+              <p data-testid="planner-day-blurb" className="mt-3 text-xs text-muted-foreground">
+                {DAY_ROUTES.find((x) => x.dayKey === activeDay)?.blurb} Curated suggestion — check crowd reports before you go.
+              </p>
+            )}
+          </section>
           <section className="rounded-xl border border-border/70 bg-card p-4" data-testid="planner-stops-panel">
             <h2 className="mb-3 font-heading text-lg font-bold">Stops ({ordered.length})</h2>
 

@@ -6,6 +6,7 @@ import { formatDistance, haversineMeters } from "@/lib/geo";
 import { dirUrlFor } from "@/lib/directions";
 import { useFavourites } from "@/lib/favourites";
 import { VerificationBadge } from "./VerificationBadge";
+import { CrowdChip } from "./Crowd";
 import { cn } from "@/lib/utils";
 
 interface Props {
@@ -74,6 +75,7 @@ export function PandalCard({ pandal: p, userCoords }: Props) {
         </span>
         {p.neighbourhood && <span className="text-muted-foreground">{p.neighbourhood}</span>}
         <VerificationBadge status={p.verificationStatus} />
+        <CrowdChip pandalId={p.id} />
       </div>
 
       <p data-testid="pandal-card-metro" className="flex items-center gap-2 text-sm text-muted-foreground">

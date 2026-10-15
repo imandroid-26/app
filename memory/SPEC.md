@@ -20,3 +20,17 @@ Kolkata Durga Puja 2026 companion: discover pandals, nearest metro, Google Maps 
 - Approximate pins → Google Maps name search destination + warnings.
 - Planner: nearest-neighbour + 2-opt; links split into ≤10 stops (9 waypoint limit).
 - No auth, no API keys.
+
+## Puja calendar & banner
+- Days (Kolkata): Mahalaya 10 Oct; Shashthi 16; **two Saptamis 17 & 18** (keys saptami-1/2); Ashtami 19; Navami 20; Dashami 21 Oct 2026.
+- `GET /api/puja/today[?on=YYYY-MM-DD]` → phase before/during/after, current/next day, days/seconds until Shashthi. Anchored to Asia/Kolkata server-side.
+- Banner under the nav: countdown before, "Shubho <day>" + Today's route link during, Bijoya message after. Hidden if backend unreachable.
+
+## Live crowd reports (Mongo `crowd_reports`)
+- `POST /api/crowd/reports {pandal_id, level: easy|busy|packed, client_id}` → 201; unknown pandal 404; same device+pandal within 10 min → 429.
+- `GET /api/crowd/summary` (all pandals with reports in last 90 min, recency-weighted level), `GET /api/crowd/summary/{id}` (404 if none).
+- client_id = anonymous random id in localStorage `pujopath_client_id`. Docs TTL-expire after 1 day.
+- UI: crowd panel with 3 buttons on pandal detail; crowd chip on cards when reports exist.
+
+## Puja day picker
+- Route Planner → "Pick a puja day": 6 buttons (each Saptami separate) load curated stops (lib/puja.ts DAY_ROUTES) ordered by optimizeOrder. `/planner?day=<key>` does the same.

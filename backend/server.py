@@ -62,8 +62,12 @@ async def get_status_checks():
 
 # Include the router in the main app
 from routers.pandals import router as pandals_router  # noqa: E402
+from routers.puja import router as puja_router  # noqa: E402
+from routers.crowd import router as crowd_router  # noqa: E402
 
 api_router.include_router(pandals_router)
+api_router.include_router(puja_router)
+api_router.include_router(crowd_router)
 app.include_router(api_router)
 
 app.add_middleware(

@@ -26,6 +26,7 @@ import { estimateWalkMinutes, formatDistance, haversineMeters } from "@/lib/geo"
 import { PandalMap } from "@/components/PandalMap";
 import { PandalCard } from "@/components/PandalCard";
 import { VerificationBadge } from "@/components/VerificationBadge";
+import { CrowdPanel } from "@/components/Crowd";
 
 const MODES: { mode: TravelMode; label: string; icon: typeof Footprints }[] = [
   { mode: "walking", label: "Walking directions", icon: Footprints },
@@ -177,6 +178,7 @@ export default function PandalDetail() {
       {/* body */}
       <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-5">
         <div className="flex flex-col gap-6 lg:col-span-2">
+          <CrowdPanel pandalId={p.id} pandalName={p.name} />
           <section className="rounded-xl border border-border/70 bg-card p-5" data-testid="pandal-detail-location-panel">
             <h2 className="mb-3 flex items-center gap-2 font-heading text-lg font-bold">
               <MapPin className="size-4 text-primary" aria-hidden /> Location
