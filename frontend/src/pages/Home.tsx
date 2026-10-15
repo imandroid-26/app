@@ -7,9 +7,9 @@ import { useGeoLocation } from "@/lib/useGeo";
 const PUJA_DAYS = [
   { day: "Mahalaya", date: "Sat 10 Oct" },
   { day: "Shashthi", date: "Fri 16 Oct" },
-  { day: "Saptami", date: "Sat 17 Oct" },
-  { day: "Ashtami", date: "Sun 18 Oct" },
-  { day: "Navami", date: "Mon 19 Oct" },
+  { day: "Saptami", date: "Sun 18 Oct" },
+  { day: "Ashtami", date: "Mon 19 Oct" },
+  { day: "Navami", date: "Tue 20 Oct" },
   { day: "Dashami", date: "Wed 21 Oct" },
 ];
 
@@ -138,7 +138,6 @@ export default function Home() {
               <span className="font-medium text-foreground">{d.day}</span> {d.date}
             </span>
           ))}
-          <span className="ml-auto text-xs text-muted-foreground">Dates via pujomap.com guide</span>
         </div>
       </section>
 
