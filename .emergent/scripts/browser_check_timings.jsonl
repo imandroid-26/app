@@ -1,0 +1,1 @@
+{"ts": "2026-10-15T05:29:13", "name": "home-stat-and-explore-count", "mode": "ran-inline", "url": "https://pandal-explorer-3.preview.emergentagent.com", "passed": true, "total_ms": 13634, "pw_import_ms": 485, "launch_ms": 3128, "first_goto_ms": 2208, "body_ms": 7317, "body_gotos": [{"ms": 2094, "waitUntil": "domcontentloaded"}, {"ms": 2040, "waitUntil": "domcontentloaded"}]}

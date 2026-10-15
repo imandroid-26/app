@@ -1,0 +1,305 @@
+{
+  "project_name": "PujoPath - Kolkata Durga Puja 2026 Companion",
+  "archetype": "ARCHETYPE 1: ORGANIC & EARTHY + FESTIVE EDITORIAL HERITAGE (Vermilion, Ivory, Gold)",
+  "design_philosophy": "Authored Kolkata festive cultural companion. A harmonious blend of traditional Bengali heritage aesthetics (alta red, kash flower white, brass lamps, shankha patterns) with precision navigational utility (metro proximity, Leaflet map markers, Haversine distance, 2-opt route planning). Avoids AI slop like generic purple gradients or sterile SaaS gray boxes.",
+  "theme_strategy": {
+    "default_mode": "light",
+    "support_toggle": true,
+    "light_aesthetic": "Warm Ivory paper base (#FAF7F2), vermilion headers and accents (#C8281E), molten antique gold trims (#C69214 / #E2B93B), deep charcoal typography (#1C1613).",
+    "dark_aesthetic": "Midnight Terracotta & Deep Obsidian base (#120F0D / #1B1512), soft warm gold highlights (#F1C40F), glowing crimson indicators (#E63946), ivory text (#FDFBF7)."
+  },
+  "typography": {
+    "pairing_archetype": "Editorial Heritage (Serif Heading + Precision Geometric Sans Body)",
+    "fonts": {
+      "heading": "Playfair Display Variable, 'Lora Variable', serif",
+      "body": "Plus Jakarta Sans Variable, 'DM Sans Variable', sans-serif",
+      "mono": "JetBrains Mono Variable, monospace",
+      "bengali_script_fallback": "'Noto Sans Bengali', 'Plus Jakarta Sans', sans-serif"
+    },
+    "fontsource_imports": [
+      "@import \"@fontsource-variable/playfair-display\";",
+      "@import \"@fontsource-variable/plus-jakarta-sans\";",
+      "@import \"@fontsource-variable/jetbrains-mono\";"
+    ],
+    "scale_px": {
+      "display": 56,
+      "h1": 42,
+      "h2": 32,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "typesetting_rules": {
+      "headlines": "tracking-tight leading-tight font-serif font-bold text-foreground",
+      "subheadings": "tracking-normal leading-snug font-sans text-muted-foreground",
+      "labels_overlines": "uppercase tracking-[0.18em] text-xs font-semibold text-accent-gold",
+      "bengali_titles": "font-sans font-medium text-muted-foreground/90 tracking-wide text-sm"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page_light",
+        "kind": "solid",
+        "bg": "#FAF7F2",
+        "on_bg": "#1C1613",
+        "on_bg_muted": "#5C4F46",
+        "roles": {
+          "link": "#C8281E",
+          "error": "#B91C1C",
+          "success": "#15803D",
+          "warning": "#B45309",
+          "border": "#E8DEC8"
+        }
+      },
+      {
+        "name": "page_dark",
+        "kind": "solid",
+        "bg": "#120F0D",
+        "on_bg": "#FDFBF7",
+        "on_bg_muted": "#B5A79E",
+        "roles": {
+          "link": "#E2B93B",
+          "error": "#EF4444",
+          "success": "#22C55E",
+          "warning": "#F59E0B",
+          "border": "#2D241E"
+        }
+      },
+      {
+        "name": "card_light",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#1C1613",
+        "on_bg_muted": "#5C4F46",
+        "roles": {
+          "border": "#EFE6D5",
+          "hover_border": "#C69214",
+          "badge_bg": "#FDF3E7",
+          "badge_text": "#8C4A00"
+        }
+      },
+      {
+        "name": "card_dark",
+        "kind": "solid",
+        "bg": "#1C1613",
+        "on_bg": "#FDFBF7",
+        "on_bg_muted": "#B5A79E",
+        "roles": {
+          "border": "#2E241E",
+          "hover_border": "#E2B93B",
+          "badge_bg": "#2A1F18",
+          "badge_text": "#FDE047"
+        }
+      },
+      {
+        "name": "hero_banner",
+        "kind": "image",
+        "contrast_against": "#2B0B08",
+        "guarantee": "scrim: linear-gradient(to right, rgba(20, 10, 8, 0.92) 0%, rgba(20, 10, 8, 0.75) 50%, rgba(20, 10, 8, 0.40) 100%), linear-gradient(to top, rgba(20, 10, 8, 0.95) 0%, transparent 60%)",
+        "on_bg": "#FFF8F0",
+        "on_bg_muted": "#E0CEBC",
+        "roles": {
+          "link": "#F5D061",
+          "error": "#FCA5A5",
+          "success": "#86EFAC",
+          "accent_pill": "#881337"
+        }
+      },
+      {
+        "name": "zone_north",
+        "kind": "solid",
+        "bg": "#FEF2F2",
+        "on_bg": "#991B1B",
+        "on_bg_muted": "#7F1D1D"
+      },
+      {
+        "name": "zone_south",
+        "kind": "solid",
+        "bg": "#FFFBEB",
+        "on_bg": "#92400E",
+        "on_bg_muted": "#78350F"
+      },
+      {
+        "name": "zone_port",
+        "kind": "solid",
+        "bg": "#F0FDF4",
+        "on_bg": "#166534",
+        "on_bg_muted": "#14532D"
+      },
+      {
+        "name": "zone_suburban",
+        "kind": "solid",
+        "bg": "#FAF5FF",
+        "on_bg": "#6B21A8",
+        "on_bg_muted": "#581C87"
+      }
+    ],
+    "accent": "#C8281E",
+    "on_accent": "#FFFFFF",
+    "accent_gold": "#C69214",
+    "on_accent_gold": "#1C1613"
+  },
+  "entry_surfaces": {
+    "/": "editorial split hero — left: festive Durga Puja 2026 headline, zone quick-filters, search input & route CTA; right: high-definition Durga idol artwork with glowing warm scrim and live stat overlay (286 pandals, 4 zones, 24 metro-connected)",
+    "/explore": "dense directory header with search, multi-zone pill toggles, verification chips, metro selector; body split into interactive map container and 2-column pandal card feed with list/map toggle",
+    "/pandal/:id": "rich pandal detail dossier — header with Bengali typography, verification badge & metro distance; action bar (Directions, Save Favourite, Add to Itinerary); Leaflet map view and nearby pandals carousel",
+    "/itinerary": "split route optimizer — left panel: draggable pandal stops, Haversine + 2-opt optimization trigger, Google Maps multi-waypoint share link generator; right panel: sequenced polyline route preview map",
+    "/favourites": "curated 'My Pujas' grid with zone categorization, export list, and 'Create Route from Favourites' direct CTA"
+  },
+  "zone_styling_matrix": {
+    "North & Central Kolkata": {
+      "hex": "#C8281E",
+      "light_bg": "#FEF2F2",
+      "light_border": "#FECACA",
+      "text": "#991B1B",
+      "map_pin_class": "pin-north-vermilion",
+      "label": "North & Central (Heritage & Traditional)"
+    },
+    "South & South-East Kolkata": {
+      "hex": "#D97706",
+      "light_bg": "#FFFBEB",
+      "light_border": "#FDE68A",
+      "text": "#92400E",
+      "map_pin_class": "pin-south-amber",
+      "label": "South & South-East (Modern Themes & Spectacles)"
+    },
+    "Port Area": {
+      "hex": "#0D9488",
+      "light_bg": "#F0FDFA",
+      "light_border": "#99F6E4",
+      "text": "#115E59",
+      "map_pin_class": "pin-port-teal",
+      "label": "Port Area (Riverside & Community)"
+    },
+    "South Suburban & South-West Kolkata": {
+      "hex": "#7C3AED",
+      "light_bg": "#FAF5FF",
+      "light_border": "#DDD6FE",
+      "text": "#6B21A8",
+      "map_pin_class": "pin-suburban-purple",
+      "label": "South Suburban / Behala / Jadavpur"
+    }
+  },
+  "verification_badges": {
+    "Verified": {
+      "badge_text": "Puja 2026 Confirmed",
+      "bg_light": "#DCFCE7",
+      "text_light": "#166534",
+      "bg_dark": "#14532D",
+      "text_dark": "#BBF7D0",
+      "icon": "ShieldCheck",
+      "description": "On-ground location & 2026 committee schedule verified"
+    },
+    "Partially verified": {
+      "badge_text": "Partially Verified",
+      "bg_light": "#FEF3C7",
+      "text_light": "#92400E",
+      "bg_dark": "#451A03",
+      "text_dark": "#FDE68A",
+      "icon": "AlertCircle",
+      "description": "Location matches reference directory, 2026 theme awaiting confirmation"
+    },
+    "Name only": {
+      "badge_text": "Approximate Pin",
+      "bg_light": "#F1F5F9",
+      "text_light": "#475569",
+      "bg_dark": "#1E293B",
+      "text_dark": "#CBD5E1",
+      "icon": "MapPinOff",
+      "description": "Neighbourhood anchor only — please confirm locally"
+    },
+    "Needs review": {
+      "badge_text": "Under Review",
+      "bg_light": "#FEE2E2",
+      "text_light": "#991B1B",
+      "bg_dark": "#450A0A",
+      "text_dark": "#FECACA",
+      "icon": "HelpCircle",
+      "description": "Flagged for coordinate or name clarification"
+    }
+  },
+  "layout_and_grids": {
+    "navigation_bar": "Sticky header with crystal glassmorphism (`backdrop-blur-xl bg-[#FAF7F2]/85 dark:bg-[#120F0D]/85 border-b border-[#E8DEC8] dark:border-[#2D241E] z-50`). Brand logo left: PujoPath with Bengali trishul/alpana glyph, nav items center, Theme toggle + favourites count pill right.",
+    "container_widths": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_home_grid": "Grid with asymmetric spans: Col 1-8 for Featured Pandal Spotlight with rich imagery; Col 9-12 for Metro-to-Pandal Transit Quickfinder and Live Route Planner shortcut.",
+    "explore_grid": "2-column or 3-column card grid (`grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6`), with floating or side-by-side Leaflet Map container with sync state.",
+    "spacing_scale": "p-4, p-6, p-8, p-12, py-16, py-20. Generous breathing room between editorial sections to honor festival reverence."
+  },
+  "image_urls": [
+    {
+      "category": "hero_bg",
+      "url": "https://images.unsplash.com/photo-1759463191632-90844233c9ea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxkaHVudWNoaSUyMGRhbmNlJTIwZHVyZ2ElMjBwdWphJTIwa29sa2F0YXxlbnwwfHx8fDE3OTIwNDA5NDd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Glorious traditional Maa Durga idol in glowing vermilion red and gold sholar saaj, perfect for hero section background and visual centerpiece.",
+      "intended_usage": "Home page Hero Section background with layered gradient scrim for high-contrast white/gold text legibility"
+    },
+    {
+      "category": "spotlight_tradition",
+      "url": "https://images.unsplash.com/photo-1634015158905-de840be0c62c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxEdXJnYSUyMHB1amElMjBpZG9sfGVufDB8fHx8MTc5MjA0MDk0N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Detailed close-up of golden Maa Durga crown and eyes (Chokkhu Daan craftsmanship).",
+      "intended_usage": "Featured Heritage Pujas (Bagbazar, Kumartuli Park, Sovabazar Rajbari) card visuals"
+    },
+    {
+      "category": "spotlight_modern",
+      "url": "https://images.unsplash.com/photo-1728531149421-fbddbd127982?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHw0fHxLb2xrYXRhJTIwZHVyZ2ElMjBwdWphJTIwcGFuZGFsJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzkyMDQwOTQ3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Artistic modern themed pandal installation in South Kolkata with surreal lighting and architecture.",
+      "intended_usage": "South Kolkata Theme Puja showcase (Suruchi Sangha, Chetla Agrani, Tridhara)"
+    },
+    {
+      "category": "dhunuchi_evening",
+      "url": "https://images.unsplash.com/photo-1640281694730-df0af5ca7bd2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHxkaHVudWNoaSUyMGRhbmNlJTIwZHVyZ2ElMjBwdWphJTIwa29sa2F0YXxlbnwwfHx8fDE3OTIwNDA5NDd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Evening aarti atmosphere with devotees and dhunuchi dance in Kolkata pandal.",
+      "intended_usage": "Route planner and Evening Itinerary suggestions section"
+    }
+  ],
+  "motion_and_interactions": {
+    "philosophy": "Subtle sacred grace. Gentle card hover lifts, smooth accordion expansions, responsive map pan-and-zoom.",
+    "hover_transitions": "transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.2s ease (Never use transition: all)",
+    "card_hover_effect": "hover:-translate-y-1 hover:shadow-lg hover:border-accent-gold/60",
+    "button_press": "active:scale-[0.98] transition-transform duration-100",
+    "map_markers": "Custom pulsed SVG icon when pandal is active or selected in list",
+    "reduced_motion": "Wrap animations with @media (prefers-reduced-motion: reduce) or use Tailwind 'motion-safe:' prefix"
+  },
+  "accessibility_and_wcag": {
+    "contrast_ratio": "All body and label typography strictly passes APCA / WCAG AA 4.5:1 minimum on their respective backgrounds.",
+    "touch_targets": "Minimum 44px x 44px touch targets on mobile for all map pins, filter chips, and action buttons.",
+    "screen_readers": "All icon-only buttons (like Save to Favourites heart or Close) MUST have descriptive aria-label attributes.",
+    "honest_data_disclosure": "When coordinates are approximate (e.g. 19 records without exact street snapping), display an honest 'Approximate Neighbourhood Anchor' tag with info tooltip."
+  },
+  "test_attributes": {
+    "convention": "data-testid='<role>-<descriptor>'",
+    "required_test_ids": [
+      "nav-brand-logo",
+      "nav-link-home",
+      "nav-link-explore",
+      "nav-link-itinerary",
+      "nav-link-favourites",
+      "theme-toggle-button",
+      "hero-search-input",
+      "hero-explore-button",
+      "pandal-search-input",
+      "zone-filter-north",
+      "zone-filter-south",
+      "zone-filter-port",
+      "zone-filter-suburban",
+      "pandal-card-item",
+      "pandal-card-title",
+      "pandal-card-metro",
+      "pandal-card-favourite-toggle",
+      "pandal-detail-directions-button",
+      "route-planner-optimize-button",
+      "route-planner-share-google-maps",
+      "geolocation-trigger-button",
+      "leaflet-map-container"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Setup Leaflet: Install leaflet and @types/leaflet via `yarn add leaflet @types/leaflet` in frontend directory. Import leaflet CSS in index.html or App.tsx.",
+    "2. Theme tokens: Update `frontend/src/index.css` with the festive Ivory, Vermilion, and Molten Gold palette in `:root` and `.dark` blocks, and import Playfair Display + Plus Jakarta Sans fonts.",
+    "3. Seed data: Ensure 286 Kolkata pandal records are loaded into MongoDB / fast-query API with coordinates, zone tags, nearest metro, Bengali titles, and verification status.",
+    "4. Geolocation & Haversine: Implement genuine Haversine distance calculator with 'straight-line distance' label. Support browser Geolocation with graceful denial state.",
+    "5. Route Optimizer: Provide 2-opt or nearest-neighbour TSP route ordering for multi-pandal itineraries, chunked into Google Maps URLs (up to 9 waypoints per link).",
+    "6. Storage: Use localStorage for favourite pandals ('pujopath_favourites') and saved itineraries.",
+    "7. All interactive elements MUST include `data-testid` attributes as specified."
+  ]
+}

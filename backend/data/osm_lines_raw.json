@@ -1,0 +1,1134 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-15T05:05:53Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "relation",
+  "id": 8033916,
+  "members": [
+    {
+      "type": "node",
+      "ref": 11447425097,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500785,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500783,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9144035336,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5421533679,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500781,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500779,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500777,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500775,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500773,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500771,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500769,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491167,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491165,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699268221,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572592,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491162,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491160,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491158,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491156,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491152,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491151,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572460,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572638,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572434,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 8475640178,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1201641483,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1201642272,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1201642271,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1201641484,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 610018754,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 610018755,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 610018753,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1035978257,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 915803262,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 610018752,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#0000ff",
+    "from": "Kavi Subhash",
+    "name": "Blue Line (Kavi Subhash → Dakshineshwar)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Metro Railway, Kolkata",
+    "public_transport:version": "2",
+    "route": "subway",
+    "to": "Dakshineshwar",
+    "type": "route",
+    "wikidata": "Q6427301",
+    "wikipedia": "en:Blue Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 8034180,
+  "members": [
+    {
+      "type": "node",
+      "ref": 8475640179,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189265396,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189265012,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491149,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491150,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491153,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491155,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491157,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491159,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491161,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491163,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699268222,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491164,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491166,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703491168,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500770,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500772,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500774,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500776,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500778,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500780,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9144035337,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5421533680,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500782,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11703500784,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11447425098,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 535333546,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 915803263,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1035978258,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 535333535,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1124379129,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1193989529,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1193989535,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1193989527,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1174213094,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1174212171,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1126837960,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 535333563,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 535333556,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1201641482,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1201642269,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1201642270,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1201641481,
+      "role": ""
+    },
+    {
+      "type": "relation",
+      "ref": 20573598,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#0000ff",
+    "from": "Dakshineshwar",
+    "name": "Blue Line (Dakshineshwar → Kavi Subhash)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Metro Railway, Kolkata",
+    "public_transport:version": "2",
+    "ref": "Blue",
+    "route": "subway",
+    "to": "Kavi Subhash",
+    "type": "route",
+    "wikidata": "Q6427301",
+    "wikipedia": "en:Blue Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 11720071,
+  "members": [
+    {
+      "type": "node",
+      "ref": 11699262524,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699262523,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699262527,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699268220,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9884790403,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572412,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140070,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140068,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140064,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140061,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572361,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572424,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 610018751,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1258949231,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1258466136,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 855300989,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1146853675,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 610018750,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "green",
+    "from": "Howrah Maidan",
+    "name": "Green Line (Howrah Maidan → Salt Lake Sector V)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "public_transport:version": "2",
+    "ref": "Green",
+    "route": "subway",
+    "to": "Salt Lake Sector V",
+    "type": "route",
+    "wikidata": "Q6427302",
+    "wikipedia": "en:Green Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 11720072,
+  "members": [
+    {
+      "type": "node",
+      "ref": 7628479190,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189265479,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140062,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140065,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140067,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7976140071,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189265436,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9884790402,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699268219,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699262526,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699262522,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11699262525,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 535333527,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1146853686,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 855300990,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1258466135,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1258949232,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 535333510,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "green",
+    "from": "Salt Lake Sector V",
+    "name": "Green Line (Salt Lake Sector V → Howrah Maidan)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "public_transport:version": "2",
+    "ref": "Green",
+    "route": "subway",
+    "to": "Howrah Maidan",
+    "type": "route",
+    "wikidata": "Q6427302",
+    "wikipedia": "en:Green Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 15068961,
+  "members": [
+    {
+      "type": "node",
+      "ref": 5189264107,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10296539475,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189264046,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189264080,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10296539473,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10296539470,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10296539479,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1258464745,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266824698,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266824692,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266824694,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1126009381,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266568229,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266568228,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1128141379,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#800080",
+    "from": "Majerhat",
+    "name": "Purple Line (Majerhat → Joka)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Indian Railways",
+    "public_transport:version": "2",
+    "ref": "Purple",
+    "route": "subway",
+    "to": "Joka",
+    "type": "route",
+    "wikidata": "Q27502952",
+    "wikipedia": "en:Purple Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 15068962,
+  "members": [
+    {
+      "type": "node",
+      "ref": 10672068303,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10672068202,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10672068455,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10672068519,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10672068267,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10672068406,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189264044,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1266568230,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266568231,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1146853645,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266824695,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266824691,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1266824697,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1210497578,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#800080",
+    "from": "Joka",
+    "name": "Purple Line (Joka → Majerhat)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Indian Railways",
+    "public_transport:version": "2",
+    "ref": "Purple",
+    "route": "subway",
+    "to": "Majerhat",
+    "type": "route",
+    "wikidata": "Q27502952",
+    "wikipedia": "en:Purple Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 17320237,
+  "members": [
+    {
+      "type": "way",
+      "ref": 1424034992,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1233648304,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1152420479,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1233648306,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 5189264572,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088459000,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088485705,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088485708,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189264654,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189264598,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189264544,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5189264549,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 8506805609,
+      "role": "stop"
+    }
+  ],
+  "tags": {
+    "colour": "#F47421",
+    "from": "Beleghata",
+    "name": "Orange Line (Beleghata → Kavi Subhash)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Indian Railways",
+    "public_transport:version": "2",
+    "ref": "Orange",
+    "route": "subway",
+    "to": "Kavi Subhash",
+    "type": "route",
+    "wikidata": "Q28050323",
+    "wikipedia": "en:Orange Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 17320238,
+  "members": [
+    {
+      "type": "way",
+      "ref": 1233648307,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1210496763,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1233648305,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1424034991,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 8506805607,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572086,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572081,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572075,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572069,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088485706,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088485703,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088485702,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5777572045,
+      "role": "stop"
+    }
+  ],
+  "tags": {
+    "colour": "#F47421",
+    "from": "Kavi Subhash",
+    "name": "Orange Line (Kavi Subhash → Beleghata)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Indian Railways",
+    "public_transport:version": "2",
+    "ref": "Orange",
+    "route": "subway",
+    "to": "Beleghata",
+    "type": "route",
+    "wikidata": "Q28050323",
+    "wikipedia": "en:Orange Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19508978,
+  "members": [
+    {
+      "type": "node",
+      "ref": 13088491841,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088491870,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088491873,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088491875,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1424036116,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 915848217,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FFFF00",
+    "from": "Jai Hind",
+    "name": "Yellow Line (Jai Hind → Noapara)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Metro Railway, Kolkata",
+    "public_transport:version": "2",
+    "ref": "Yellow",
+    "route": "subway",
+    "to": "Noapara",
+    "type": "route",
+    "wikidata": "Q25587810",
+    "wikipedia": "en:Yellow Line (Kolkata Metro)"
+  }
+},
+{
+  "type": "relation",
+  "id": 19508983,
+  "members": [
+    {
+      "type": "node",
+      "ref": 13088491876,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088491872,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088491869,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13088491842,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 915848218,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1424036117,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FFFF00",
+    "from": "Noapara",
+    "name": "Yellow Line (Noapara → Jai Hind)",
+    "network": "Kolkata Metro",
+    "network:wikidata": "Q1048849",
+    "operator": "Metro Railway, Kolkata",
+    "public_transport:version": "2",
+    "ref": "Yellow",
+    "route": "subway",
+    "to": "Jai Hind",
+    "type": "route",
+    "wikidata": "Q25587810",
+    "wikipedia": "en:Yellow Line (Kolkata Metro)"
+  }
+}
+
+  ]
+}
