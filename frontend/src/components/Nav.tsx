@@ -11,6 +11,7 @@ const LINKS = [
   { to: "/map", label: "Map", testid: "nav-link-map", end: false },
   { to: "/my-pujas", label: "My Pujas", testid: "nav-link-favourites", end: false },
   { to: "/planner", label: "Route Planner", testid: "nav-link-itinerary", end: false },
+  { to: "/guide", label: "Ask Guide", testid: "nav-link-guide", end: false },
 ];
 
 function BrandMark() {

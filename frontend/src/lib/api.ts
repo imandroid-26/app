@@ -44,3 +44,32 @@ export const apiPut = <T>(path: string, body?: JsonBody) => request<T>("PUT", pa
 export const apiPatch = <T>(path: string, body?: JsonBody) =>
   request<T>("PATCH", path, body ?? null);
 export const apiDelete = <T>(path: string) => request<T>("DELETE", path);
+
+/** POST and consume a text/event-stream of `data: {json}` frames (SSE over fetch). */
+export async function apiStream<E>(path: string, body: JsonBody, onEvent: (e: E) => void, signal?: AbortSignal): Promise<void> {
+  const res = await fetch(`${BASE}${path}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Accept: "text/event-stream" },
+    body: JSON.stringify(body),
+    signal,
+  });
+  if (!res.ok || !res.body) {
+    const errBody = await res.json().catch(() => null);
+    throw new ApiError(res.status, errBody);
+  }
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buf = "";
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    let idx: number;
+    while ((idx = buf.indexOf("\n\n")) !== -1) {
+      const frame = buf.slice(0, idx);
+      buf = buf.slice(idx + 2);
+      const line = frame.split("\n").find((l) => l.startsWith("data:"));
+      if (line) onEvent(JSON.parse(line.slice(5).trim()) as E);
+    }
+  }
+}

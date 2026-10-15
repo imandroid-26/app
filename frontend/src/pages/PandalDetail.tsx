@@ -22,7 +22,9 @@ import type { TravelMode } from "@/lib/directions";
 import { useFavourites } from "@/lib/favourites";
 import { usePlannerStops } from "@/lib/planner";
 import { useGeoLocation } from "@/lib/useGeo";
-import { estimateWalkMinutes, formatDistance, haversineMeters } from "@/lib/geo";
+import { formatDistance, haversineMeters } from "@/lib/geo";
+import { hasPin } from "@/lib/types";
+import type { PinnedPandal } from "@/lib/types";
 import { PandalMap } from "@/components/PandalMap";
 import { PandalCard } from "@/components/PandalCard";
 import { VerificationBadge } from "@/components/VerificationBadge";
@@ -50,8 +52,12 @@ export default function PandalDetail() {
 
   const nearby = useMemo(() => {
     if (!p) return [];
-    return PANDALS.filter((x) => x.id !== p.id)
-      .map((x) => ({ x, d: haversineMeters({ lat: p.lat, lon: p.lon }, x) }))
+    if (!hasPin(p)) {
+      // no verified position: suggest others in the same neighbourhood instead
+      return PANDALS.filter((x) => x.id !== p.id && x.neighbourhood && x.neighbourhood === p.neighbourhood).slice(0, 4);
+    }
+    return PANDALS.filter((x): x is PinnedPandal => x.id !== p.id && hasPin(x))
+      .map((x) => ({ x, d: haversineMeters(p, x) }))
       .sort((a, b) => a.d - b.d)
       .slice(0, 4)
       .map(({ x }) => x);
@@ -76,8 +82,9 @@ export default function PandalDetail() {
   const inRoute = planner.stops.includes(p.id);
   const zone = ZONE_BY_CODE[p.zone];
   const straightFromUser =
-    geo.coords ? haversineMeters(geo.coords, { lat: p.lat, lon: p.lon }) : null;
+    geo.coords && hasPin(p) ? haversineMeters(geo.coords, p) : null;
   const approx = p.locationAccuracy === "approximate";
+  const noPin = p.locationAccuracy === "unknown";
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -193,8 +200,12 @@ export default function PandalDetail() {
                 <NotVerified what="A verified street address" />
               </dd>
               <dt className="text-muted-foreground">Coordinates</dt>
-              <dd className="font-mono text-xs">
-                {approx ? (
+              <dd className="font-mono text-xs" data-testid="pandal-detail-coordinates">
+                {noPin ? (
+                  <span className="inline-flex items-center gap-1.5 font-sans text-sm italic text-muted-foreground/80">
+                    <MapPinOff className="size-3.5" aria-hidden /> Location not verified
+                  </span>
+                ) : approx ? (
                   <span className="inline-flex items-center gap-1.5">
                     <MapPinOff className="size-3.5" aria-hidden /> neighbourhood anchor only ({p.lat}, {p.lon})
                   </span>
@@ -206,10 +217,11 @@ export default function PandalDetail() {
                 )}
               </dd>
             </dl>
-            {approx && (
-              <p className="mt-3 rounded-lg bg-secondary/60 p-3 text-xs leading-relaxed text-muted-foreground">
-                This pin was placed at the centre of the neighbourhood, not verified at the exact site. The
-                Directions button searches Google Maps by name instead of dropping a possibly-wrong pin.
+            {(approx || noPin) && (
+              <p className="mt-3 rounded-lg bg-secondary/60 p-3 text-xs leading-relaxed text-muted-foreground" data-testid="pandal-detail-approx-note">
+                {noPin
+                  ? "No reliable map position could be found for this pandal, so it is not pinned on the map. Directions search Google Maps by name and locality — please confirm the result before you set off."
+                  : "This pin marks the stated landmark or neighbourhood, not a verified site. The Directions button searches Google Maps by name instead of dropping a possibly-wrong pin."}
               </p>
             )}
             {p.reviewNotes && (
@@ -235,19 +247,26 @@ export default function PandalDetail() {
                     ))}
                   </p>
                 )}
-                {p.distanceFromMetroKm != null ? (
-                  <p className="text-muted-foreground">
-                    {formatDistance(p.distanceFromMetroKm * 1000)} as mapped by the reference directory ·{" "}
-                    <span title="Estimated at a normal 80 m/min walking pace — not a routed time">
-                      ≈ {estimateWalkMinutes(p.distanceFromMetroKm * 1000)} min walk (estimate)
-                    </span>
-                  </p>
-                ) : (
-                  <p className="text-muted-foreground">
-                    Walking distance not verified — the mapped figure for this record looked unreliable, so we
-                    don't show one.
-                  </p>
-                )}
+                <div className="flex flex-col gap-1 text-muted-foreground" data-testid="pandal-detail-metro-distances">
+                  {p.metroStraightLineKm != null && (
+                    <p>{formatDistance(p.metroStraightLineKm * 1000)} straight-line</p>
+                  )}
+                  {p.distanceFromMetroKm != null && p.walkingTimeFromMetroMinutes != null ? (
+                    <p className="text-foreground">
+                      {formatDistance(p.distanceFromMetroKm * 1000)} walk · about {p.walkingTimeFromMetroMinutes} min
+                      <span className="text-muted-foreground"> (routed on OpenStreetMap footpaths)</span>
+                    </p>
+                  ) : (
+                    <p>Walking distance not routed for this record — use Directions for the real route.</p>
+                  )}
+                  {p.practicalMetro && p.practicalMetro !== p.nearestMetro && p.practicalWalkKm != null && (
+                    <p className="rounded-md border border-gold/40 bg-gold/10 px-2 py-1 text-xs text-foreground" data-testid="pandal-detail-practical-metro">
+                      Shorter walk: <span className="font-semibold">{p.practicalMetro}</span>
+                      {p.practicalMetroLine.length > 0 && ` (${p.practicalMetroLine.join(" & ")})`} —{" "}
+                      {formatDistance(p.practicalWalkKm * 1000)}, about {p.practicalWalkMinutes} min on foot
+                    </p>
+                  )}
+                </div>
                 <a
                   href={`https://www.google.com/maps/dir/?api=1&destination=${p.metroStationLat},${p.metroStationLon}&travelmode=transit`}
                   target="_blank"
@@ -342,12 +361,34 @@ export default function PandalDetail() {
 
         <div className="flex flex-col gap-6 lg:col-span-3">
           <div className="relative">
-            <PandalMap
-              pandals={mapPandals}
-              selectedId={p.id}
-              showAccuracy
-              className="h-[46vh] min-h-[320px] w-full rounded-xl border border-border/70 lg:h-[60vh]"
-            />
+            {noPin ? (
+              <div
+                data-testid="pandal-detail-no-map"
+                className="flex h-[46vh] min-h-[320px] w-full flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-border bg-secondary/40 p-6 text-center lg:h-[60vh]"
+              >
+                <MapPinOff className="size-8 text-muted-foreground" aria-hidden />
+                <p className="font-medium">Location not verified</p>
+                <p className="max-w-sm text-sm text-muted-foreground">
+                  We don't pin pandals at guessed locations. Search for it in Google Maps and confirm the result.
+                </p>
+                <a
+                  href={searchUrlFor(p)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="pandal-detail-search-maps-link"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-border/70 px-3 py-2 text-sm font-medium hover:border-primary/50"
+                >
+                  <ExternalLink className="size-4" aria-hidden /> Search Google Maps
+                </a>
+              </div>
+            ) : (
+              <PandalMap
+                pandals={mapPandals}
+                selectedId={p.id}
+                showAccuracy
+                className="h-[46vh] min-h-[320px] w-full rounded-xl border border-border/70 lg:h-[60vh]"
+              />
+            )}
             {approx && (
               <p className="absolute bottom-2 left-2 rounded-md bg-background/90 px-2 py-1 text-xs text-muted-foreground shadow">
                 Approximate neighbourhood pin — circle shows the uncertainty area

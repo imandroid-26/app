@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../../" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:site_name" content="Pujo Map" />
+    <meta property="og:locale" content="en_IN" />
+    <script>
+      (function () {
+        // Marks the document as JavaScript-capable before first paint, so
+        // src/seo-doc.css can hide the prerendered document without a flash.
+        // WITHOUT THIS LINE seo-doc.css's html:not(.js) #app { display: none }
+        // hides the entire app -- the map included.
+        document.documentElement.classList.add("js");
+        // The Puja day, Kolkata time, before first paint: CSS shows that
+        // day's band on the start card (src/ui/puja-day.ts). ?pujaday= previews.
+        try {
+          var q = /[?&]pujaday=([a-z]+)/.exec(location.search);
+          var k = new Date(Date.now() + 19800000).toISOString().slice(0, 10);
+          var d = q ? q[1] : { "2026-10-11": "agomoni", "2026-10-12": "agomoni", "2026-10-13": "agomoni", "2026-10-14": "agomoni", "2026-10-15": "agomoni", "2026-10-16": "shashthi", "2026-10-17": "saptami", "2026-10-18": "saptami", "2026-10-19": "ashtami", "2026-10-20": "nabami", "2026-10-21": "dashami" }[k];
+          if (d) document.documentElement.setAttribute("data-pujaday", d);
+        } catch (e) {}
+        try {
+          var t = localStorage.getItem("pujo-map-theme");
+          if (t === "light" || t === "dark") {
+            document.documentElement.setAttribute("data-theme", t);
+            document.documentElement.style.colorScheme = t;
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Plain icons with no media query come first: Google's and Bing's favicon
+         fetchers skip media-scoped links, and Google wants a square multiple of 48px. -->
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#05070f" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Pujo Map" />
+    <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
+    <!-- Start the map style and its tile index downloading with the page, not
+         after the 390 KB script has run: MapLibre only asks for the style once
+         it boots, then the tile index, then tiles -- three round trips in a
+         row before the first tile. The app opens light whatever the system
+         says (theme.ts), so the light style is the one to fetch; a visitor
+         who chose dark in the app pays one extra fetch. -->
+    <link rel="preload" href="https://tiles.openfreemap.org/styles/liberty" as="fetch" crossorigin />
+    <link rel="preload" href="https://tiles.openfreemap.org/planet" as="fetch" crossorigin />
+    <!-- The prerendered document's own styles. This link was missing in this
+         repo while src/seo-doc.css was present, so .pm-doc rendered with no
+         styles at all -- raw headings and a default-purple link under the
+         map. It also carries the rules that decide whether the document is
+         shown, so without it neither half worked. -->
+    <script type="module" crossorigin src="./assets/main-EW2cXFk4.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/video-facade-Cxeh3dCX.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-DO7T5B1Y.css">
+    <link rel="preload" as="font" type="font/woff2" href="./assets/quicksand-latin-700-normal-Dpk7G9Y6.woff2" crossorigin="">
+    <link rel="preload" as="font" type="font/woff2" href="./assets/quicksand-latin-600-normal-DTBPeRoM.woff2" crossorigin="">
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js" defer></script>    <title>Dum Dum Mall Pally — Durga Puja 2026 pandal, Kolkata | Pujo Map</title>
+    <meta name="description" content="Dum Dum Mall Pally is a Durga Puja pandal in Kolkata. Near Mall Road, Dum Dum. Jessore Road metro is 1.4 km away, about 27 min on foot. A free Durga Pujo…" />
+    <link rel="canonical" href="https://www.pujomap.com/p/dum-dum-mall-pally" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.pujomap.com/p/dum-dum-mall-pally" />
+    <meta property="og:title" content="Dum Dum Mall Pally — Durga Puja 2026 pandal, Kolkata | Pujo Map" />
+    <meta property="og:description" content="Dum Dum Mall Pally is a Durga Puja pandal in Kolkata. Near Mall Road, Dum Dum. Jessore Road metro is 1.4 km away, about 27 min on foot. A free Durga Pujo…" />
+    <meta property="og:image" content="https://www.pujomap.com/og/site-home.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pujo Map — Kolkata Durga Puja 2026 pandal map" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dum Dum Mall Pally — Durga Puja 2026 pandal, Kolkata | Pujo Map" />
+    <meta name="twitter:description" content="Dum Dum Mall Pally is a Durga Puja pandal in Kolkata. Near Mall Road, Dum Dum. Jessore Road metro is 1.4 km away, about 27 min on foot. A free Durga Pujo…" />
+    <meta name="twitter:image" content="https://www.pujomap.com/og/site-home.jpg" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.pujomap.com/#website","name":"Pujo Map","url":"https://www.pujomap.com/","inLanguage":["en","bn"],"publisher":{"@id":"https://www.pujomap.com/#organization"}},{"@type":"TouristAttraction","name":"Dum Dum Mall Pally","alternateName":"দমদম মল পল্লী","description":"Dum Dum Mall Pally is a Durga Puja pandal in Kolkata. Near Mall Road, Dum Dum. Jessore Road metro is 1.4 km away, about 27 min on foot. A free Durga Pujo…","url":"https://www.pujomap.com/p/dum-dum-mall-pally","geo":{"@type":"GeoCoordinates","latitude":22.628364,"longitude":88.422169},"address":{"@type":"PostalAddress","streetAddress":"Mall Road, Dum Dum","addressRegion":"West Bengal","addressCountry":"IN"},"isAccessibleForFree":true,"touristType":"Durga Puja"},{"@type":"Event","name":"Dum Dum Mall Pally Durga Puja 2026","description":"Dum Dum Mall Pally is a Durga Puja pandal in Kolkata. Near Mall Road, Dum Dum. Jessore Road metro is 1.4 km away, about 27 min on foot. A free Durga Pujo…","url":"https://www.pujomap.com/p/dum-dum-mall-pally","startDate":"2026-10-16","endDate":"2026-10-21","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","isAccessibleForFree":true,"location":{"@type":"Place","name":"Dum Dum Mall Pally","geo":{"@type":"GeoCoordinates","latitude":22.628364,"longitude":88.422169},"address":{"@type":"PostalAddress","streetAddress":"Mall Road, Dum Dum","addressLocality":"Kolkata","addressRegion":"West Bengal","addressCountry":"IN"}},"offers":{"@type":"Offer","price":0,"priceCurrency":"INR","availability":"https://schema.org/InStock","url":"https://www.pujomap.com/p/dum-dum-mall-pally","validFrom":"2026-09-01"},"organizer":{"@type":"Organization","name":"Dum Dum Mall Pally"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pujo Map","item":"https://www.pujomap.com/"},{"@type":"ListItem","position":2,"name":"Dum Dum Mall Pally","item":"https://www.pujomap.com/p/dum-dum-mall-pally"}]}]}</script>
+  </head>
+  <body>
+    <div id="app" class="no-detail"></div>
+    <!-- Retries the app script once if it fails to load (public/boot-guard.js). -->
+    <script src="./boot-guard.js"></script>
+      <div class="pm-doc"><article class="pm-body"><nav class="pm-crumbs" aria-label="Breadcrumb"><a href="/">Pujo Map</a><span class="pm-sep" aria-hidden="true">›</span><span aria-current="page">Dum Dum Mall Pally</span></nav><p class="pm-kicker">Durga Puja 2026 pandal</p><h1>Dum Dum Mall Pally <span class="pm-bn" lang="bn">দমদম মল পল্লী</span></h1><p class="pm-lede">Dum Dum Mall Pally is a Durga Puja pandal in Kolkata. Near Mall Road, Dum Dum. Jessore Road metro is 1.4 km away, about 27 min on foot.</p><p class="pm-cta"><a href="/">Open the Kolkata Durga Puja pandal map</a></p><dl class="pm-facts"><dt>Street</dt><dd>Mall Road, Dum Dum</dd><dt>Nearest metro</dt><dd>Jessore Road metro — 1.4 km · about 27 min walk</dd><dt>Coordinates</dt><dd>22.62836, 88.42217</dd><dt>Run this puja?</dt><dd>Send photos, this year’s timings and a line about it to <a href="/cdn-cgi/l/email-protection#f59d9099999ab585809f9a989485db969a98ca8680979f909681c8b69a98989c81819090d0c6b4d0c7c5b18098d0c7c5b18098d0c7c5b8949999d0c7c5a59499998c"><span class="__cf_email__" data-cfemail="573f323b3b381727223d383a36277934383a">[email&#160;protected]</span></a> and we’ll add them here.</dd></dl><h2>How to reach Dum Dum Mall Pally</h2><p>Take the metro to Jessore Road. From there it is 1.4 km on foot, about 27 minutes (measured in a straight line; the street walk is a little longer).</p><p>On Puja evenings the police close roads and turn some one way; follow the barricades on the ground.</p><h2>When to visit Dum Dum Mall Pally</h2><p>Durga Puja 2026 runs from Shashthi on Friday 16 October to Bijoya Dashami on Wednesday 21 October; Mahalaya is Saturday 10 October.</p><p>Across the city, evenings from Saptami to Navami are the busiest; mornings and the days before Saptami are quieter.</p><h2>Pandals near Dum Dum Mall Pally</h2><p>The closest pujas on foot — the next stops if you are hopping from here.</p><ul class="pm-list"><li><a href="/p/arjunpur-amra-sabai">Arjunpur Amra Sabai</a> <span class="pm-bn" lang="bn">অর্জুনপুর আমরা সবাই</span> <span class="pm-note">510 m · about 10 min walk</span></li><li><a href="/p/telipukur-yuba-sangha">Telipukur Yuba Sangha</a> <span class="pm-bn" lang="bn">তেলিপুকুর যুব সংঘ</span> <span class="pm-note">1.3 km · about 25 min walk</span></li><li><a href="/p/dakshinpara-sarbojanin">Dakshinpara Sarbojanin</a> <span class="pm-note">1.7 km · about 31 min walk</span></li><li><a href="/p/baguiati-rail-pukur-united-club">Baguiati Rail Pukur United Club</a> <span class="pm-note">1.8 km · about 34 min walk</span></li><li><a href="/p/dum-dum-park-tarun-dal">Dum Dum Park Tarun Dal</a> <span class="pm-note">1.9 km · about 35 min walk</span></li><li><a href="/p/dum-dum-park-bharat-chakra">Dum Dum Park Bharat Chakra</a> <span class="pm-bn" lang="bn">দমদম পার্ক ভারতচক্র</span> <span class="pm-note">2.1 km · about 39 min walk</span></li></ul></article><footer class="pm-foot"><div class="pm-foot-group"><h2>Explore Kolkata</h2><ul><li><a href="/area/north-kolkata">North Kolkata</a></li><li><a href="/area/central-kolkata">Central Kolkata</a></li><li><a href="/area/south-kolkata">South Kolkata</a></li><li><a href="/area/behala-south-west">Behala &amp; South-West Kolkata</a></li><li><a href="/area/howrah">Howrah</a></li><li><a href="/area/salt-lake-new-town">Salt Lake, New Town &amp; the North-East</a></li></ul></div><div class="pm-foot-group"><h2>Walking routes</h2><ul><li><a href="/c/north-heritage">Old North</a></li><li><a href="/c/jorasanko">Jorasanko</a></li><li><a href="/c/central-theme">Central Squares</a></li><li><a href="/c/maddox-bakul-bagan">Maddox &amp; Bakul Bagan</a></li><li><a href="/c/south-core">South Core</a></li><li><a href="/c/kalighat-chetla">Kalighat &amp; Chetla</a></li><li><a href="/c/behala-barisha">Behala &amp; Barisha</a></li><li><a href="/c/dum-dum-park">Dum Dum Park</a></li><li><a href="/c/tala-lake-town">Tala &amp; Lake Town</a></li><li><a href="/c/north-east-salt-lake">Salt Lake Blocks</a></li><li><a href="/c/south-kolkata-long-walk">South Kolkata, the long walk</a></li></ul></div><div class="pm-foot-group"><h2>Plan your Puja</h2><ul><li><a href="/guide/">Kolkata Durga Puja 2026 guide</a></li><li><a href="/map/">Kolkata Durga Puja pandal map</a></li><li><a href="/best-pandals/">Best Durga Puja pandals 2026</a></li><li><a href="/c/">All walking routes</a></li><li><a href="/area/">All areas</a></li><li><a href="/metro/">Pandals near a metro station</a></li><li><a href="/a/">Places to visit</a></li><li><a href="/vibes/">Kolkata vibes</a></li></ul></div><p class="pm-foot-note">Pujo Map — a free Durga Puja pandal map, walking routes and live crowd reports for Kolkata. <a href="/radio">Puja Radio</a> · <a href="/beyond-kolkata/">Pujas beyond Kolkata</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/press.html">Press</a> · <a href="/legal.html">Privacy &amp; terms</a></p><p class="pm-foot-note"><a href="/llms.txt">Information for AI assistants</a></p><p class="pm-foot-note">Follow Pujo Map: <a href="https://www.instagram.com/pujomap" rel="me noopener" target="_blank">Instagram</a> · <a href="https://www.youtube.com/@pujomap" rel="me noopener" target="_blank">YouTube</a> · <a href="https://www.facebook.com/pujomap" rel="me noopener" target="_blank">Facebook</a></p></footer></div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

@@ -12,7 +12,7 @@ export type TravelMode = "walking" | "driving" | "transit";
 export function dirUrlFor(p: Pandal, mode?: TravelMode): string {
   const params = new URLSearchParams({ api: "1" });
   if (mode) params.set("travelmode", mode);
-  if (p.locationAccuracy === "exact") {
+  if (p.locationAccuracy === "exact" && p.lat !== null && p.lon !== null) {
     params.set("destination", `${p.lat},${p.lon}`);
   } else {
     params.set("destination", `${p.name}, ${p.neighbourhood ?? ""}, Kolkata`.replace(/, ,/, ","));
@@ -74,5 +74,7 @@ export function multiStopLinks(
 }
 
 function destText(p: Pandal): string {
-  return p.locationAccuracy === "exact" ? `${p.lat},${p.lon}` : `${p.name}, ${p.neighbourhood ?? ""}, Kolkata`;
+  return p.locationAccuracy === "exact" && p.lat !== null
+    ? `${p.lat},${p.lon}`
+    : `${p.name}, ${p.neighbourhood ?? ""}, Kolkata`.replace(/, ,/, ",");
 }

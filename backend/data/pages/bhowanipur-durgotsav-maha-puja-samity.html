@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../../" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:site_name" content="Pujo Map" />
+    <meta property="og:locale" content="en_IN" />
+    <script>
+      (function () {
+        // Marks the document as JavaScript-capable before first paint, so
+        // src/seo-doc.css can hide the prerendered document without a flash.
+        // WITHOUT THIS LINE seo-doc.css's html:not(.js) #app { display: none }
+        // hides the entire app -- the map included.
+        document.documentElement.classList.add("js");
+        // The Puja day, Kolkata time, before first paint: CSS shows that
+        // day's band on the start card (src/ui/puja-day.ts). ?pujaday= previews.
+        try {
+          var q = /[?&]pujaday=([a-z]+)/.exec(location.search);
+          var k = new Date(Date.now() + 19800000).toISOString().slice(0, 10);
+          var d = q ? q[1] : { "2026-10-11": "agomoni", "2026-10-12": "agomoni", "2026-10-13": "agomoni", "2026-10-14": "agomoni", "2026-10-15": "agomoni", "2026-10-16": "shashthi", "2026-10-17": "saptami", "2026-10-18": "saptami", "2026-10-19": "ashtami", "2026-10-20": "nabami", "2026-10-21": "dashami" }[k];
+          if (d) document.documentElement.setAttribute("data-pujaday", d);
+        } catch (e) {}
+        try {
+          var t = localStorage.getItem("pujo-map-theme");
+          if (t === "light" || t === "dark") {
+            document.documentElement.setAttribute("data-theme", t);
+            document.documentElement.style.colorScheme = t;
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Plain icons with no media query come first: Google's and Bing's favicon
+         fetchers skip media-scoped links, and Google wants a square multiple of 48px. -->
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#05070f" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Pujo Map" />
+    <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
+    <!-- Start the map style and its tile index downloading with the page, not
+         after the 390 KB script has run: MapLibre only asks for the style once
+         it boots, then the tile index, then tiles -- three round trips in a
+         row before the first tile. The app opens light whatever the system
+         says (theme.ts), so the light style is the one to fetch; a visitor
+         who chose dark in the app pays one extra fetch. -->
+    <link rel="preload" href="https://tiles.openfreemap.org/styles/liberty" as="fetch" crossorigin />
+    <link rel="preload" href="https://tiles.openfreemap.org/planet" as="fetch" crossorigin />
+    <!-- The prerendered document's own styles. This link was missing in this
+         repo while src/seo-doc.css was present, so .pm-doc rendered with no
+         styles at all -- raw headings and a default-purple link under the
+         map. It also carries the rules that decide whether the document is
+         shown, so without it neither half worked. -->
+    <script type="module" crossorigin src="./assets/main-EW2cXFk4.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/video-facade-Cxeh3dCX.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-DO7T5B1Y.css">
+    <link rel="preload" as="font" type="font/woff2" href="./assets/quicksand-latin-700-normal-Dpk7G9Y6.woff2" crossorigin="">
+    <link rel="preload" as="font" type="font/woff2" href="./assets/quicksand-latin-600-normal-DTBPeRoM.woff2" crossorigin="">
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js" defer></script>    <title>Bhowanipur Durgotsav Maha Puja Samity — Durga Puja 2026 pandal | Pujo Map</title>
+    <meta name="description" content="Bhowanipur Durgotsav Maha Puja Samity is a Durga Puja pandal in Hazra, Kolkata. Near Ramesh Mitra Road. Netaji Bhavan metro is 370 m away, about 5 min on…" />
+    <link rel="canonical" href="https://www.pujomap.com/p/bhowanipur-durgotsav-maha-puja-samity" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.pujomap.com/p/bhowanipur-durgotsav-maha-puja-samity" />
+    <meta property="og:title" content="Bhowanipur Durgotsav Maha Puja Samity — Durga Puja 2026 pandal | Pujo Map" />
+    <meta property="og:description" content="Bhowanipur Durgotsav Maha Puja Samity is a Durga Puja pandal in Hazra, Kolkata. Near Ramesh Mitra Road. Netaji Bhavan metro is 370 m away, about 5 min on…" />
+    <meta property="og:image" content="https://www.pujomap.com/og/bhowanipur-durgotsav-maha-puja-samity.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bhowanipur Durgotsav Maha Puja Samity — Durga Puja 2026, Kolkata" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bhowanipur Durgotsav Maha Puja Samity — Durga Puja 2026 pandal | Pujo Map" />
+    <meta name="twitter:description" content="Bhowanipur Durgotsav Maha Puja Samity is a Durga Puja pandal in Hazra, Kolkata. Near Ramesh Mitra Road. Netaji Bhavan metro is 370 m away, about 5 min on…" />
+    <meta name="twitter:image" content="https://www.pujomap.com/og/bhowanipur-durgotsav-maha-puja-samity.jpg" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.pujomap.com/#website","name":"Pujo Map","url":"https://www.pujomap.com/","inLanguage":["en","bn"],"publisher":{"@id":"https://www.pujomap.com/#organization"}},{"@type":"TouristAttraction","name":"Bhowanipur Durgotsav Maha Puja Samity","alternateName":"ভবানীপুর দুর্গোৎসব মহা পূজা সমিতি","description":"Bhowanipur Durgotsav Maha Puja Samity is a Durga Puja pandal in Hazra, Kolkata. Near Ramesh Mitra Road. Netaji Bhavan metro is 370 m away, about 5 min on…","url":"https://www.pujomap.com/p/bhowanipur-durgotsav-maha-puja-samity","geo":{"@type":"GeoCoordinates","latitude":22.53491,"longitude":88.34382},"address":{"@type":"PostalAddress","streetAddress":"Ramesh Mitra Road","addressLocality":"Hazra","addressRegion":"West Bengal","addressCountry":"IN"},"isAccessibleForFree":true,"touristType":"Durga Puja"},{"@type":"Event","name":"Bhowanipur Durgotsav Maha Puja Samity Durga Puja 2026","description":"Bhowanipur Durgotsav Maha Puja Samity is a Durga Puja pandal in Hazra, Kolkata. Near Ramesh Mitra Road. Netaji Bhavan metro is 370 m away, about 5 min on…","url":"https://www.pujomap.com/p/bhowanipur-durgotsav-maha-puja-samity","startDate":"2026-10-16","endDate":"2026-10-21","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","isAccessibleForFree":true,"location":{"@type":"Place","name":"Bhowanipur Durgotsav Maha Puja Samity","geo":{"@type":"GeoCoordinates","latitude":22.53491,"longitude":88.34382},"address":{"@type":"PostalAddress","streetAddress":"Ramesh Mitra Road","addressLocality":"Hazra","addressRegion":"West Bengal","addressCountry":"IN"}},"offers":{"@type":"Offer","price":0,"priceCurrency":"INR","availability":"https://schema.org/InStock","url":"https://www.pujomap.com/p/bhowanipur-durgotsav-maha-puja-samity","validFrom":"2026-09-01"},"organizer":{"@type":"Organization","name":"Bhowanipur Durgotsav Maha Puja Samity"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pujo Map","item":"https://www.pujomap.com/"},{"@type":"ListItem","position":2,"name":"South Kolkata","item":"https://www.pujomap.com/area/south-kolkata"},{"@type":"ListItem","position":3,"name":"Hazra","item":"https://www.pujomap.com/area/hazra"},{"@type":"ListItem","position":4,"name":"Bhowanipur Durgotsav Maha Puja Samity","item":"https://www.pujomap.com/p/bhowanipur-durgotsav-maha-puja-samity"}]}]}</script>
+  </head>
+  <body>
+    <div id="app" class="no-detail"></div>
+    <!-- Retries the app script once if it fails to load (public/boot-guard.js). -->
+    <script src="./boot-guard.js"></script>
+      <div class="pm-doc"><article class="pm-body"><nav class="pm-crumbs" aria-label="Breadcrumb"><a href="/">Pujo Map</a><span class="pm-sep" aria-hidden="true">›</span><a href="/area/south-kolkata">South Kolkata</a><span class="pm-sep" aria-hidden="true">›</span><a href="/area/hazra">Hazra</a><span class="pm-sep" aria-hidden="true">›</span><span aria-current="page">Bhowanipur Durgotsav Maha Puja Samity</span></nav><p class="pm-kicker">Durga Puja 2026 pandal</p><h1>Bhowanipur Durgotsav Maha Puja Samity <span class="pm-bn" lang="bn">ভবানীপুর দুর্গোৎসব মহা পূজা সমিতি</span></h1><p class="pm-lede">Bhowanipur Durgotsav Maha Puja Samity is a Durga Puja pandal in Hazra, Kolkata. Near Ramesh Mitra Road. Netaji Bhavan metro is 370 m away, about 5 min on foot.</p><p class="pm-cta"><a href="/">Open the Kolkata Durga Puja pandal map</a></p><dl class="pm-facts"><dt>Neighbourhood</dt><dd><a href="/area/hazra">Hazra</a></dd><dt>Part of</dt><dd><a href="/area/south-kolkata">South Kolkata</a></dd><dt>Street</dt><dd>Ramesh Mitra Road</dd><dt>Nearest metro</dt><dd><a href="/metro/netaji-bhavan">Netaji Bhavan metro</a>, exit Gate 2 — 370 m · about 5 min walk</dd><dt>Coordinates</dt><dd>22.53491, 88.34382</dd><dt>Run this puja?</dt><dd>Send photos, this year’s timings and a line about it to <a href="/cdn-cgi/l/email-protection#0f676a6363604f7f7a6560626e7f216c6062307c7a6d656a6c7b324c606262667b7b6a6a2a3c4e2a3d3f4d6760786e61667f7a7d2a3d3f4b7a7d68607b7c6e792a3d3f426e676e2a3d3f5f7a656e2a3d3f5c6e62667b76"><span class="__cf_email__" data-cfemail="e58d8089898aa595908f8a888495cb868a88">[email&#160;protected]</span></a> and we’ll add them here.</dd></dl><h2>How to reach Bhowanipur Durgotsav Maha Puja Samity</h2><p>Take the metro to Netaji Bhavan and leave by Gate 2, the exit nearest the pandal. From there it is 370 m on foot, about 5 minutes along the streets.</p><p>On Puja evenings the police close roads and turn some one way; follow the barricades on the ground.</p><h2>When to visit Bhowanipur Durgotsav Maha Puja Samity</h2><p>Durga Puja 2026 runs from Shashthi on Friday 16 October to Bijoya Dashami on Wednesday 21 October; Mahalaya is Saturday 10 October.</p><p>Across the city, evenings from Saptami to Navami are the busiest; mornings and the days before Saptami are quieter.</p><h2>Pandals near Bhowanipur Durgotsav Maha Puja Samity</h2><p>The closest pujas on foot — the next stops if you are hopping from here.</p><ul class="pm-list"><li><a href="/p/bhowanipore-76-pally">Bhowanipore 76 Pally</a> <span class="pm-note">150 m · about 3 min walk</span></li><li><a href="/p/uday-sangha">Uday Sangha</a> <span class="pm-bn" lang="bn">উদয় সংঘ</span> <span class="pm-note">270 m · about 5 min walk</span></li><li><a href="/p/harish-park-byayam-samiti">Harish Park Byayam Samiti</a> <span class="pm-bn" lang="bn">হরিশ পার্ক ব্যায়াম সমিতি</span> <span class="pm-note">490 m · about 9 min walk</span></li><li><a href="/p/bhawanipore-mitra-bari">Bhawanipore Mitra Bari</a> <span class="pm-bn" lang="bn">ভবানীপুর মিত্র বাড়ি</span> <span class="pm-note">620 m · about 12 min walk</span></li><li><a href="/p/gokhale-sporting">Gokhale Sporting</a> <span class="pm-bn" lang="bn">গোখলে স্পোর্টিং</span> <span class="pm-note">650 m · about 12 min walk</span></li><li><a href="/p/ray-street-sarbojanin">Ray Street Sarbojanin</a> <span class="pm-bn" lang="bn">রায় স্ট্রীট সার্বজনীন</span> <span class="pm-note">860 m · about 16 min walk</span></li></ul><h2>Landmarks and food nearby</h2><p>Worth the detour if you are in this part of the city anyway.</p><ul class="pm-list"><li><a href="/f/flaming-bowl">Flaming Bowl</a> <span class="pm-note">Vegetarian food · 220 m · about 4 min walk</span></li><li><a href="/f/kake-di-hatti-bhowanipore">Kake di Hatti, Bhowanipore</a> <span class="pm-note">Vegetarian food · 410 m · about 8 min walk</span></li><li><a href="/a/netaji-bhavan">Netaji Bhavan</a> <span class="pm-bn" lang="bn">নেতাজি ভবন</span> <span class="pm-note">Museum · 820 m · about 15 min walk</span></li><li><a href="/f/sattvik">Sattvik</a> <span class="pm-note">Vegetarian food · 890 m · about 17 min walk</span></li></ul></article><footer class="pm-foot"><div class="pm-foot-group"><h2>Explore Kolkata</h2><ul><li><a href="/area/north-kolkata">North Kolkata</a></li><li><a href="/area/central-kolkata">Central Kolkata</a></li><li><a href="/area/south-kolkata">South Kolkata</a></li><li><a href="/area/behala-south-west">Behala &amp; South-West Kolkata</a></li><li><a href="/area/howrah">Howrah</a></li><li><a href="/area/salt-lake-new-town">Salt Lake, New Town &amp; the North-East</a></li></ul></div><div class="pm-foot-group"><h2>Walking routes</h2><ul><li><a href="/c/north-heritage">Old North</a></li><li><a href="/c/jorasanko">Jorasanko</a></li><li><a href="/c/central-theme">Central Squares</a></li><li><a href="/c/maddox-bakul-bagan">Maddox &amp; Bakul Bagan</a></li><li><a href="/c/south-core">South Core</a></li><li><a href="/c/kalighat-chetla">Kalighat &amp; Chetla</a></li><li><a href="/c/behala-barisha">Behala &amp; Barisha</a></li><li><a href="/c/dum-dum-park">Dum Dum Park</a></li><li><a href="/c/tala-lake-town">Tala &amp; Lake Town</a></li><li><a href="/c/north-east-salt-lake">Salt Lake Blocks</a></li><li><a href="/c/south-kolkata-long-walk">South Kolkata, the long walk</a></li></ul></div><div class="pm-foot-group"><h2>Plan your Puja</h2><ul><li><a href="/guide/">Kolkata Durga Puja 2026 guide</a></li><li><a href="/map/">Kolkata Durga Puja pandal map</a></li><li><a href="/best-pandals/">Best Durga Puja pandals 2026</a></li><li><a href="/c/">All walking routes</a></li><li><a href="/area/">All areas</a></li><li><a href="/metro/">Pandals near a metro station</a></li><li><a href="/a/">Places to visit</a></li><li><a href="/vibes/">Kolkata vibes</a></li></ul></div><p class="pm-foot-note">Pujo Map — a free Durga Puja pandal map, walking routes and live crowd reports for Kolkata. <a href="/radio">Puja Radio</a> · <a href="/beyond-kolkata/">Pujas beyond Kolkata</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/press.html">Press</a> · <a href="/legal.html">Privacy &amp; terms</a></p><p class="pm-foot-note"><a href="/llms.txt">Information for AI assistants</a></p><p class="pm-foot-note">Follow Pujo Map: <a href="https://www.instagram.com/pujomap" rel="me noopener" target="_blank">Instagram</a> · <a href="https://www.youtube.com/@pujomap" rel="me noopener" target="_blank">YouTube</a> · <a href="https://www.facebook.com/pujomap" rel="me noopener" target="_blank">Facebook</a></p></footer></div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

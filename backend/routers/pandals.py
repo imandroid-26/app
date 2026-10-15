@@ -18,12 +18,15 @@ class PandalOut(BaseModel):
     neighbourhood: Optional[str] = None
     zone: str
     zoneName: str
-    lat: float
-    lon: float
+    lat: Optional[float] = None
+    lon: Optional[float] = None
     locationAccuracy: str
     nearestMetro: Optional[str] = None
     metroLine: List[str] = []
+    metroStraightLineKm: Optional[float] = None
     distanceFromMetroKm: Optional[float] = None
+    walkingTimeFromMetroMinutes: Optional[int] = None
+    practicalMetro: Optional[str] = None
     googleMapsDirectionsUrl: str
     verificationStatus: str
 
@@ -31,8 +34,12 @@ class PandalOut(BaseModel):
 class PandalStats(BaseModel):
     total: int
     exactPins: int
+    approximatePins: int
+    noPin: int
     withMetro: int
+    walkingRouted: int
     byStatus: dict
+    byZone: dict
 
 
 def _load() -> list:
@@ -51,13 +58,19 @@ async def list_pandals(zone: Optional[str] = None):
 async def pandal_stats():
     rows = _load()
     by_status: dict = {}
+    by_zone: dict = {}
     for r in rows:
         by_status[r["verificationStatus"]] = by_status.get(r["verificationStatus"], 0) + 1
+        by_zone[r["zone"]] = by_zone.get(r["zone"], 0) + 1
     return PandalStats(
         total=len(rows),
         exactPins=sum(1 for r in rows if r["locationAccuracy"] == "exact"),
-        withMetro=sum(1 for r in rows if r.get("metroStationLat") is not None),
+        approximatePins=sum(1 for r in rows if r["locationAccuracy"] == "approximate"),
+        noPin=sum(1 for r in rows if r["lat"] is None),
+        withMetro=sum(1 for r in rows if r.get("nearestMetro")),
+        walkingRouted=sum(1 for r in rows if r.get("distanceFromMetroKm") is not None or r.get("practicalWalkKm") is not None),
         byStatus=by_status,
+        byZone=by_zone,
     )
 
 

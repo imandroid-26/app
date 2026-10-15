@@ -1,57 +1,66 @@
-# PujoPath — pandal import report
-_Generated 2026-10-15_
+# PujoPath — data import & quality audit
+_Generated 2026-10-15 by `scripts/build_dataset.py`_
 
-## Source
-- Reference directory: [Pujo Map](https://www.pujomap.com/) — its map page advertises **275 mapped pandals** at import time (the count the requester quoted, 271, is an earlier snapshot).
-- Machine-readable export actually served: `https://www.pujomap.com/data/pandals.json` under the **ODbL 1.0** licence (data © OpenStreetMap contributors). The site states the export is filtered: records whose coordinates were cross-referenced from third-party listings (18 of 307 at time of writing) are withheld and cannot be redistributed — so the export ≠ the full map catalogue.
-- Metro stations, coordinates and line membership: **OpenStreetMap** (Overpass API), ODbL.
+## Sources and access
+- **Pujo Map ODbL export** `https://www.pujomap.com/data/pandals.json`: 291 rows (unchanged since first import). Positions are OSM-derived or hand-placed; licence ODbL 1.0.
+- **Pujo Map public pages** (sitemap: 275 pandal pages). Pages for pandals absent from the export were read for *facts* (name, locality, street reference, the directory's named metro). Their coordinates were **not copied** — the directory states those positions came from a third-party listing it cannot sublicense. They were used only to *check* our independently derived pins.
+- **OpenStreetMap**: Nominatim + Overpass for positions of the page-only pandals; Overpass for metro stations and line membership.
+- **Pedestrian routing**: https://routing.openstreetmap.de (OSRM foot profile, © OpenStreetMap contributors) — walking distance/time from each precisely-located pandal to its 3 straight-line-nearest stations.
+- **Google Maps**: not queried programmatically (no API key configured; scraping Google is not permitted). Directions use Google's public URL scheme only; no place IDs.
+- **Official Kolkata Metro site** (mtp.indianrailways.gov.in): timed out from the build server, so station names/lines are cross-checked against OSM only.
 
-## Import result
-- Records in the source export: **291**
-- True duplicates removed (identical pins under one name): **5**
-- **Unique pandals imported: 286** — this is the total the website displays; it is higher than the map page's advertised 275 because the export contains rows the map UI does not count (e.g. duplicate zone variants we deduplicated, and records the map groups differently). We display the real dataset count, never a hard-coded number.
+## Phase 8 — Salt Lake, New Town, Rajarhat & North-East
+- Reference pages not represented in the export: **78**
+- Duplicates of existing records under another spelling (linked as sources, IDs kept): **4** — kumartuli-park → kumartuli-sarbojanin, pathuriaghata-5er-pally → pathuria-ghata-5-pally, players-corner → player-s-corner, taltala-childrens-park-14-palli → taltala-children-s-park-14-palli
+- **New pandals added: 74** (city-wide), of which **25** in Salt Lake / New Town / North-East
+  - with a corroborated exact pin: 12 · approximate pin: 7 · no pin (searchable, name-search directions): 55
+- Existing records updated: **18** — linked reference page: 4; neighbourhood derived from street reference: 5; zone I → V: 8; zone II → V: 1
+- New Town Action Areas II & III and Rajarhat proper: **no pandal pages exist in the reference directory** and no puja feature is mapped in OSM, so none were added — we do not assume every block holds a registered puja.
 
-## Verification breakdown
-- Coordinates present: **286/286** (267 exact [OSM-mapped/geocoded/street-snapped/verified], 19 neighbourhood-anchored approximate pins)
-- Verification status: verified **214** · partially_verified **52** · name_only **19** · needs_review **1**
-- Nearest metro attached (station + verified station coordinates + line(s)): **286/286**
-- Source-confirmed metro distance: **285/286** (walking time is never fabricated — the UI estimates it from distance at 80 m/min and labels it as an estimate)
-- Working directions links: **286/286** (267 coordinate-based, 19 name+neighbourhood search — flagged 'approximate destination')
-- Source page slug matched from the reference sitemap: **197/286**
-- Records carrying an OSM object link: **61**
-- Flagged for manual review: **10** (see notes below)
+## Phase 9 — audit of the whole dataset
+| Metric | Count |
+|---|---|
+| Rows read (export 291 + page-only 78) | 369 |
+| True duplicates removed | 5 in export + 4 page↔record |
+| **Unique pandals in the dataset** | **360** |
+| Verified street addresses | 0 — sources give street references, not postal addresses |
+| Verified (exact) coordinates | 279 |
+| Approximate pins (shown hollow) | 26 |
+| No coordinates (list + search only) | 55 |
+| Nearest metro attached with verified station coordinates/lines | 305 |
+| Routed pedestrian distance (OSRM foot) | 278 |
+| … where the shortest walk is from a different station than the listed one | 13 |
+| Directions links passing structural validation | 360 / 360 |
+| Status verified | 230 |
+| Status partially_verified | 56 |
+| Status name_only | 74 |
+| Status needs_review | 0 |
+| Confirmed for Puja 2026 by organisers | 0 — no source states per-pandal participation |
 
-## Duplicate removal decisions
-- Hindusthan Club: kept nearStreet='Hindusthan Road' (zone II); dropped nearStreet='B.L. Saha Road' (zone IV, osm)
-- Chetla Agrani: kept nearStreet='Peary Mohan Roy Road' (zone II); dropped nearStreet='G. Auddy Road' (zone IV, osm)
-- 95 Pally: kept nearStreet='Jodhpur Park' (zone II); dropped nearStreet='Rabindra Sarovar' (zone IV, osm)
-- Pally Mangal: kept nearStreet='Jodhpur Park' (zone II); dropped nearStreet='South Avenue' (zone IV, osm)
-- Kashi Bose Lane: kept nearStreet='Hari Ghose Street' (zone I); dropped nearStreet='Dani Gosh Street' (zone I, osm)
+**Zones:** North & Central Kolkata 97, South & South-East Kolkata 78, Port Area 9, South Suburban & South-West Kolkata 135, Salt Lake, New Town & North-East 34, Howrah 7
 
-## Records needing review
-- **22 Palli** (Elgin Road, zone II): straight-line nearest station is Netaji Bhavan (0.7 km) vs source's Jatin Das Park (1.4 km) — kept source assignment (walking practicality), but confirm on the ground
-- **37 Pally** (Sealdah, zone I): straight-line nearest station is Mahatma Gandhi Road (1.0 km) vs source's Sealdah (1.6 km) — kept source assignment (walking practicality), but confirm on the ground
-- **AK Block Durga Puja** (Salt Lake, zone I): straight-line nearest station is Karunamoyee (0.7 km) vs source's Salt Lake Sector V (1.2 km) — kept source assignment (walking practicality), but confirm on the ground
-- **Bangur Avenue 'C' Block Durga Puja** (Bangur Avenue, zone I): straight-line nearest station is Mahanayak Uttam Kumar (1.1 km) vs source's Central Park (12.5 km) — kept source assignment (walking practicality), but confirm on the ground
-- **Barisha Sarbojanin** (Khidderpore, zone IV): straight-line nearest station is Rabindra Sadan (2.2 km) vs source's Sakher Bazar (7.6 km) — kept source assignment (walking practicality), but confirm on the ground
-- **BD Block Durga Puja** (Salt Lake, zone I): straight-line nearest station is City Centre (0.1 km) vs source's Central Park (0.8 km) — kept source assignment (walking practicality), but confirm on the ground
-- **Beleghata 33 Pally** (—, zone II): straight-line nearest station is Salt Lake Stadium (1.0 km) vs source's Phoolbagan (1.6 km) — kept source assignment (walking practicality), but confirm on the ground
-- **Cossipore Naba Yuvak Sangha** (Sinthee, zone I): straight-line nearest station is Dum Dum (2.3 km) vs source's Shyambazar (2.8 km) — kept source assignment (walking practicality), but confirm on the ground
-- **Kheyali Sangha** (Garia, zone IV): source metro distance 1.4 km to Gitanjali disagrees with 0.5 km straight line — flagged for review
-- **Pally Bashi Brindo** (Belgachia, zone I): straight-line nearest station is Belgachia (1.3 km) vs source's Shyambazar (1.9 km) — kept source assignment (walking practicality), but confirm on the ground
+A Directions link that opens is not proof its destination is right. Coordinate links are validated against the record's own pin; name-search links are validated to contain the pandal name — the user must confirm the result in Google Maps (the UI says so).
 
-## Unavailable source data
-- No street addresses (only `nearStreet` references) — `address` stays null.
-- No per-pandal Puja 2026 confirmation — every record is `unconfirmed`; the reference directory is published for the 2026 season but does not state each committee's participation.
-- No themes, no images with a redistributable licence — `theme`/`imageUrl` stay null.
-- No Google place IDs — `googleMapsPlaceUrl` stays null; directions use coordinate or search URLs.
-- Walking times are not in the source and are never invented — shown as clearly-labelled estimates.
-- Records for Bidhannagar/Salt Lake, New Town and Howrah are mostly **absent from the ODbL export** (their coordinates came from a source the site cannot relicense) — only the few exported ones are included.
+**Metro distances corrected:** earlier builds labelled the export's `distanceMeters` as a walking distance. The directory's own pages state it is measured in a straight line, so it now lives in `metroStraightLineKm`; `distanceFromMetroKm`/`walkingTimeFromMetroMinutes` hold only routed walking values.
 
-## Re-running the import
+## Export duplicate decisions
+- Hindusthan Club: kept nearStreet='Hindusthan Road'; dropped 'B.L. Saha Road' (osm)
+- Chetla Agrani: kept nearStreet='Peary Mohan Roy Road'; dropped 'G. Auddy Road' (osm)
+- 95 Pally: kept nearStreet='Jodhpur Park'; dropped 'Rabindra Sarovar' (osm)
+- Pally Mangal: kept nearStreet='Jodhpur Park'; dropped 'South Avenue' (osm)
+- Kashi Bose Lane: kept nearStreet='Hari Ghose Street'; dropped 'Dani Gosh Street' (osm)
+
+## Link validation failures
+- none
+
+## Re-running
 ```bash
-cd /app/scripts && python3 fetch_metro_osm.py   # refresh metro stations from OSM
-curl -s https://www.pujomap.com/data/pandals.json -o /app/backend/data/pandals_source.json
-python3 build_dataset.py                        # rebuild + re-report
+cd /app/scripts
+python3 fetch_metro_osm.py        # OSM stations + lines
+python3 fetch_pujomap_pages.py    # facts from pages missing from the export (cached)
+python3 geocode_additions_osm.py && python3 osm_name_pass.py   # OSM positions for them
+python3 build_dataset.py          # build once to get pins
+python3 route_metro_walks.py     # pedestrian routes (cached)
+python3 build_dataset.py          # final build + reports
 ```
-The builder never overwrites hand-edited records: edit `frontend/src/data/pandals.json` only after an import, or extend `DEDUP_KEEP_NEAR`/`STATION_ALIASES` above — both are documented decisions.
+Hand corrections go in `backend/data/manual_overrides.json` (keyed by id) and always win over imports.

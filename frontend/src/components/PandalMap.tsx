@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Pandal } from "@/lib/types";
+import { hasPin } from "@/lib/types";
 import { ZONE_BY_CODE } from "@/lib/pandals";
 import { dirUrlFor } from "@/lib/directions";
 import type { GeoCoords } from "@/lib/useGeo";
@@ -89,6 +90,8 @@ export function PandalMap({
     const bounds = L.latLngBounds([]);
     for (let i = 0; i < pandals.length; i++) {
       const p = pandals[i];
+      // never draw a placeholder: records without a verified position get no pin
+      if (p.lat === null || p.lon === null) continue;
       const marker = L.marker([p.lat, p.lon], {
         icon: L.divIcon({
           className: "pp-pin-wrap",
@@ -131,13 +134,13 @@ export function PandalMap({
 
     if (numbered && pandals.length > 1) {
       L.polyline(
-        pandals.map((p) => [p.lat, p.lon] as [number, number]),
+        pandals.filter(hasPin).map((p) => [p.lat, p.lon] as [number, number]),
         { color: "#C8281E", weight: 2, dashArray: "6 6", opacity: 0.7 },
       ).addTo(layer);
     }
     if (showAccuracy) {
       for (const p of pandals) {
-        if (p.locationAccuracy === "approximate") {
+        if (p.locationAccuracy === "approximate" && hasPin(p)) {
           L.circle([p.lat, p.lon], { radius: 400, color: "#C69214", weight: 1, dashArray: "4 4", fillOpacity: 0.08 }).addTo(layer);
         }
       }

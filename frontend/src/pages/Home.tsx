@@ -48,8 +48,8 @@ export default function Home() {
             <span className="text-[#F5D061]">One Day at a time.</span>
           </h1>
           <p className="max-w-lg text-base text-[#E0CEBC]">
-            {TOTALS.pandals} pandals across Kolkata, mapped with verified locations, nearest
-            metro stations and one-tap Google Maps directions.
+            {TOTALS.pandals} pandals across Kolkata, Salt Lake, New Town and Howrah — {TOTALS.verifiedPins} with
+            verified map pins, nearest metro stations and one-tap Google Maps directions.
           </p>
 
           <form
@@ -154,7 +154,7 @@ export default function Home() {
             Browse everything <ArrowRight className="size-4" aria-hidden />
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {ZONES.map((z, i) => (
             <Link
               key={z.code}
@@ -203,12 +203,13 @@ export default function Home() {
           <div className="text-sm leading-relaxed text-muted-foreground">
             <p className="font-medium text-foreground">How the data stays honest</p>
             <p className="mt-1">
-              All {TOTALS.pandals} records were imported from the openly-licensed (ODbL) directory at
-              pujomap.com, with metro stations and lines cross-checked against OpenStreetMap. Where a
-              pin only anchors a neighbourhood — or a metro distance looks off — the record is labelled
-              "Partially verified", "Name only" or "Needs review" instead of pretending to be certain.
-              Walking times are clearly-marked estimates; tap Directions and let Google Maps compute the
-              real route.
+              {TOTALS.pandals} pandals: those in the openly-licensed (ODbL) export of pujomap.com, plus pandals
+              listed on its public pages but missing from the export, which we positioned independently from
+              OpenStreetMap (never copying the directory's unlicensed coordinates). Metro stations and lines come
+              from OpenStreetMap; walking distances are routed on OpenStreetMap footpaths. Where a pin only
+              anchors a landmark or neighbourhood — or no position could be verified at all — the record says
+              so ("Partially verified", "Name only") instead of pretending to be certain. {TOTALS.noPin} pandals
+              have no verified position yet: they stay searchable, with name-search directions.
             </p>
             <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
               <span className="inline-flex items-center gap-1">

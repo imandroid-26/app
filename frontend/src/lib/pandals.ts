@@ -20,6 +20,8 @@ export const ZONES: ZoneInfo[] = [
   { code: "II", name: "South & South-East Kolkata", short: "South & South-East", hex: "#D97706", softBg: "#FFFBEB", softBorder: "#FDE68A", text: "#92400E" },
   { code: "III", name: "Port Area", short: "Port Area", hex: "#0D9488", softBg: "#F0FDFA", softBorder: "#99F6E4", text: "#115E59" },
   { code: "IV", name: "South Suburban & South-West Kolkata", short: "South Suburban & South-West", hex: "#7C3AED", softBg: "#FAF5FF", softBorder: "#DDD6FE", text: "#6B21A8" },
+  { code: "V", name: "Salt Lake, New Town & North-East", short: "Salt Lake & New Town", hex: "#1D4ED8", softBg: "#EFF6FF", softBorder: "#BFDBFE", text: "#1E3A8A" },
+  { code: "VI", name: "Howrah", short: "Howrah", hex: "#BE185D", softBg: "#FDF2F8", softBorder: "#FBCFE8", text: "#9D174D" },
 ];
 
 export const ZONE_BY_CODE: Record<string, ZoneInfo> = Object.fromEntries(
@@ -80,11 +82,14 @@ export function zoneCounts(): Record<string, number> {
 
 export const METRO_NAMES: string[] = [...new Set(PANDALS.map((p) => p.nearestMetro).filter((m): m is string => !!m))].sort();
 
+export const NEIGHBOURHOODS: string[] = [...new Set(PANDALS.map((p) => p.neighbourhood).filter((m): m is string => !!m))].sort();
+
 export const TOTALS = {
   pandals: PANDALS.length,
   zones: new Set(PANDALS.map((p) => p.zone)).size,
   metroStations: METRO_NAMES.length,
   verifiedPins: PANDALS.filter((p) => p.locationAccuracy === "exact").length,
+  noPin: PANDALS.filter((p) => p.locationAccuracy === "unknown").length,
 };
 
 // Curated "big pujas" for the home page — all verified records from the import.

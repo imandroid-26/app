@@ -56,7 +56,8 @@ export default function MapPage() {
           })}
         </div>
         <p className="text-xs text-muted-foreground" data-testid="map-page-count">
-          {filtered.length} pins · hollow pins = approximate neighbourhood anchor
+          {filtered.filter((p) => p.lat !== null).length} pins · hollow pins = approximate ·{" "}
+          {filtered.filter((p) => p.lat === null).length} without a verified location (list only)
         </p>
       </div>
       <PandalMap
@@ -66,8 +67,9 @@ export default function MapPage() {
         userCoords={geo.coords}
       />
       <p className="px-4 py-2 text-xs text-muted-foreground sm:px-6 lg:px-8">
-        Map data © OpenStreetMap contributors (ODbL). Pandals with only a neighbourhood anchor are drawn hollow —
-        {PANDALS.filter((p) => p.locationAccuracy === "approximate").length} records total.
+        Map data © OpenStreetMap contributors (ODbL). Hollow pins mark approximate positions —
+        {PANDALS.filter((p) => p.locationAccuracy === "approximate").length} records. Pandals without a verified
+        position are never pinned at a guessed location.
       </p>
     </div>
   );

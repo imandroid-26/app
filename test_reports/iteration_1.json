@@ -1,0 +1,116 @@
+{
+  "iteration": 1,
+  "app": "PujoPath",
+  "mode": "generate",
+  "summary": "13/13 backend pytest cases passed; 8/8 browser checks passed. All 8 acceptance_matrix criteria (Phases 8-10 regression + new Gemini 3 Flash Puja Guide chat) verified against the live preview and localhost backend. Replaced two stale backend test files that referenced the pre-Phase-8 286-row dataset (old ids ekdalia-evergreen/20-pally, old stats) with current fixtures matching the 360-row dataset.",
+  "passed": 15,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Salt Lake / New Town zone filter and locality filter work (Phase 8)",
+      "name": "explore-zone-filter-and-reset",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Clicking zone-filter-V chip narrowed explore-result-count to 34; selecting explore-locality-select=Salt Lake further narrowed to 18 (neighbourhood=='Salt Lake' subset of zone V, confirmed via API: zone=V neighbourhood counter -> Salt Lake:18); Reset returned count to 360 and URL had no query params."
+    },
+    {
+      "criterion": "Salt Lake / New Town zone filter — API",
+      "name": "test_tscheck_zone_filter.py",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/pandals?zone=V -> 200, len==34, all records zone=='V'; GET /api/pandals/stats -> byZone.V==34, total==360."
+    },
+    {
+      "criterion": "Search by name, locality, metro station and Bengali name",
+      "name": "explore-search-variants",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "'AD Block' -> heading 'AD Block Durga Puja' visible; 'Lake Town' and 'Girish Park' both produced non-zero explore-result-count; Bengali 'দমদম' -> two Dum Dum Park cards visible (screenshot: 2 results, both 'Dum Dum Park ...'); after clicking Reset (count back to 360), typing 'Maddox' immediately narrowed to exactly 1 result (Maddox Square) with no residue from prior filters."
+    },
+    {
+      "criterion": "Every pandal has a working detail view; name-only/no-pin entries are honest",
+      "name": "pandal-detail-no-pin-honesty",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "maddox-square renders heading+map; bc-block-durga-puja-new-town renders heading, pandal-detail-no-map with 'Location not verified' text, zero .leaflet-container elements, directions href='https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=BC+Block+Durga+Puja+%28New+Town%29%2C+New+Town%2C+Kolkata' (name-based, no coordinates); unknown id shows 'Pandal not found'."
+    },
+    {
+      "criterion": "Pandal detail honesty — API",
+      "name": "test_tscheck_pandal_detail_honesty.py",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/pandals/maddox-square -> lat/lon populated, coordinate-based googleMapsDirectionsUrl; GET /api/pandals/bc-block-durga-puja-new-town -> lat/lon null, locationAccuracy='unknown', nearestMetro null, name-search googleMapsDirectionsUrl with no coordinates; GET /api/pandals/tscheck-does-not-exist-xyz -> 404."
+    },
+    {
+      "criterion": "Map pins only for records with valid coordinates",
+      "name": "map-pins-count",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "map-page-count text = '305 pins · hollow pins = approximate · 55 without a verified location (list only)'; counted exactly 305 .pp-pin DOM markers on /map."
+    },
+    {
+      "criterion": "Map pin counts — API",
+      "name": "test_tscheck_map_pin_counts.py",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/pandals/stats -> total=360, exactPins=279, approximatePins=26, noPin=55 (279+26=305); GET /api/pandals -> 305 records with non-null lat/lon, 55 with null, matching stats exactly."
+    },
+    {
+      "criterion": "Directions links valid; walking vs straight-line distances never confused",
+      "name": "directions-distance-labels",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "maddox-square: coordinate directions link found (22.526512/88.354853); page text contains '900 m' straight-line metro distance and '1.2 km' walk distance as distinct labelled values. 22-palli: pandal-detail-practical-metro visible and contains 'Netaji Bhavan' (differs from nearestMetro 'Jatin Das Park')."
+    },
+    {
+      "criterion": "Directions/distance correctness — API",
+      "name": "test_tscheck_directions_and_distances.py",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/pandals/maddox-square -> metroStraightLineKm=0.9, distanceFromMetroKm=1.18 (distinct fields); GET /api/pandals/22-palli -> nearestMetro='Jatin Das Park', practicalMetro='Netaji Bhavan', fields differ as expected."
+    },
+    {
+      "criterion": "Geolocation granted and denied",
+      "name": "geolocation-distance-sort",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "With geolocation mocked to 22.5726,88.3639 and permission granted, clicking geolocation-trigger-button on /pandal/maddox-square revealed pandal-detail-straight-distance labelled 'straight-line'; navigating via SPA link to /explore enabled and selected the 'Distance from me' sort, and page text included no-pin messaging ('Location not verified — no distance shown'); with permissions cleared and geolocation disabled, clicking the trigger produced geolocation-error-message without a crash."
+    },
+    {
+      "criterion": "Favourites persist; route planner handles waypoint limits and no-pin stops",
+      "name": "favourites-persist-and-planner-waypoints",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Hearting maddox-square incremented nav-favourites-pill from 0->1, survived a full page reload, and Maddox Square appeared on /my-pujas. Planner: added 12 real stops (11 pinned + bc-block-durga-puja-new-town); planner-gmaps-links produced exactly 2 segments labelled 'Part 1 · stops 1-10 · 10 stops' and 'Part 2 · stops 11-12 · 2 stops'; page text included 'no pin' tag for the BC Block stop; after route-planner-optimize-button, BC Block Durga Puja (New Town) remained the last stop; planner-day-saptami-2 loaded a blurb referencing 'Shyambazar-Hatibagan' (Tala & Shyambazar route)."
+    },
+    {
+      "criterion": "Puja Guide chat (Gemini 3 Flash) is grounded and works",
+      "name": "guide-chat-grounded",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "/guide shows guide-empty-state with suggestions; clicking guide-suggestion-0 streamed a guide-message-assistant reply containing 8 guide-pandal-link-<id> chips; clicking the first chip (bd-block-durga-puja) navigated to /pandal/bd-block-durga-puja; a follow-up question produced a second guide-message-assistant (count==2); guide-reset-button returned the thread to guide-empty-state."
+    },
+    {
+      "criterion": "Puja Guide chat — API grounding, validation, crowd reports",
+      "name": "test_tscheck_guide_chat.py",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "POST /api/guide/chat {message:''} -> 422; POST with a real question streamed SSE deltas containing [[pandal-id]] citations (e.g. dl-block-durga-puja, cj-block-durga-puja), and each cited id resolved via GET /api/pandals/<id> -> 200 (grounding verified)."
+    },
+    {
+      "criterion": "Puja Guide chat — crowd reports API",
+      "name": "test_tscheck_crowd_reports.py",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "POST /api/crowd/reports with unique tscheck-crowd-<uuid> client_id -> 201; identical repeat within 10 min -> 429; unknown pandal_id -> 404."
+    }
+  ],
+  "notes": [
+    "spec_deviations acknowledged and consistent with observed behaviour: no street addresses, no 2026-confirmed pandals, Google Maps uses public URL scheme (no place IDs), New Town Action Areas II/III absent, 55 no-pin records by design, Guide reply wording varies by LLM run (grounding checked via resolvable [[id]] citations, not exact text).",
+    "Removed/replaced two pre-existing backend test files (test_tscheck_dataset_stats.py, test_tscheck_directions_urls.py) that asserted against the stale pre-Phase-8 dataset (total=286, ekdalia-evergreen/20-pally ids) — they would have failed against the current 360-record dataset. New files test_tscheck_zone_filter.py, test_tscheck_pandal_detail_honesty.py, test_tscheck_map_pin_counts.py, and test_tscheck_directions_and_distances.py cover the same ground against current data.",
+    "Matrix has 8 criteria; produced 8 browser checks + 6 backend test files (two criteria were pure-API/UI-mix and got both; one criterion -- search -- and one -- geolocation -- are frontend/localStorage-only and have no separate backend artifact, which is expected)."
+  ]
+}

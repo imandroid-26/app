@@ -1,0 +1,4662 @@
+[
+  {
+    "name": "Sinthee Sarbojainin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Kalicharan Ghosh Road, Sinthe More",
+    "neighbourhood": "Sinthee",
+    "lat": 22.630674,
+    "lon": 88.379842,
+    "geocodeMethod": "geocoded",
+    "nameBn": "সিঁথি সার্বজনীন",
+    "nearestMetro": {
+      "name": "Dum Dum",
+      "distanceMeters": 1710,
+      "nameBn": "দমদম"
+    }
+  },
+  {
+    "name": "Bangali Sangha",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "K N Dutta Road",
+    "neighbourhood": "Sinthee",
+    "lat": 22.6310575,
+    "lon": 88.3740815,
+    "geocodeMethod": "osm",
+    "nameBn": "বাঙালি সংঘ",
+    "nearestMetro": {
+      "name": "Dum Dum",
+      "distanceMeters": 2225,
+      "nameBn": "দমদম"
+    }
+  },
+  {
+    "name": "Cossipore Shakti Sangha",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "K C Chatterjee Street",
+    "neighbourhood": "Sinthee",
+    "lat": 22.6160697,
+    "lon": 88.3780454,
+    "geocodeMethod": "osm",
+    "nameBn": "কাশীপুর শক্তি সংঘ",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 1735,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "Paikpara 15 Palli",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Dum Dum Road",
+    "neighbourhood": "Cossipore",
+    "lat": 22.6185273,
+    "lon": 88.3849309,
+    "geocodeMethod": "osm",
+    "nameBn": "পাইকপাড়া ১৫ পল্লী",
+    "nearestMetro": {
+      "name": "Dum Dum",
+      "distanceMeters": 867,
+      "nameBn": "দমদম"
+    }
+  },
+  {
+    "name": "Chowddar Pally",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Dum Dum Road",
+    "neighbourhood": "Cossipore",
+    "lat": 22.618712,
+    "lon": 88.37914,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "চৌদ্দার পল্লী",
+    "nearestMetro": {
+      "name": "Dum Dum",
+      "distanceMeters": 1437,
+      "nameBn": "দমদম"
+    }
+  },
+  {
+    "name": "Belgachia Olaichandi",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Raja Manindra Road, Tala Park",
+    "neighbourhood": "Belgachia",
+    "lat": 22.6045282,
+    "lon": 88.3822512,
+    "geocodeMethod": "osm",
+    "nameBn": "বেলগাছিয়া ওলাইচণ্ডী",
+    "nearestMetro": {
+      "name": "Belgachia",
+      "distanceMeters": 452,
+      "nameBn": "বেলগাছিয়া"
+    }
+  },
+  {
+    "name": "Belgachia Sadharan",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Belgachhia Road",
+    "neighbourhood": "Belgachia",
+    "lat": 22.6075305,
+    "lon": 88.3832455,
+    "geocodeMethod": "osm",
+    "nameBn": "বেলগাছিয়া সাধারণ",
+    "nearestMetro": {
+      "name": "Belgachia",
+      "distanceMeters": 369,
+      "nameBn": "বেলগাছিয়া"
+    }
+  },
+  {
+    "name": "Friends' Union",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "B Sen Street",
+    "neighbourhood": "Belgachia",
+    "lat": 22.6030328,
+    "lon": 88.3743597,
+    "geocodeMethod": "osm",
+    "nameBn": "ফ্রেন্ডস ইউনিয়ন",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 269,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "Shyam Bazar Nabin Sangha",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "A.P.C. Road",
+    "neighbourhood": "Sealdah",
+    "lat": 22.566038,
+    "lon": 88.369557,
+    "geocodeMethod": "geocoded",
+    "nameBn": "শ্যাম বাজার নবীন সংঘ",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 67,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Pallyshree Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Belgachhia",
+    "neighbourhood": "Belgachia",
+    "lat": 22.607193,
+    "lon": 88.387537,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "পল্লীশ্রী সার্বজনীন",
+    "nearestMetro": {
+      "name": "Belgachia",
+      "distanceMeters": 184,
+      "nameBn": "বেলগাছিয়া"
+    }
+  },
+  {
+    "name": "Pally Bashi Brindo",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Belgachhia",
+    "neighbourhood": "Belgachia",
+    "lat": 22.5950104,
+    "lon": 88.38946,
+    "geocodeMethod": "osm",
+    "nameBn": "পল্লীবাসী বৃন্দ",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 1878,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "Telenga Bagan",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Bidhannagar Road",
+    "neighbourhood": "Belgachia",
+    "lat": 22.5949046,
+    "lon": 88.3853831,
+    "geocodeMethod": "osm",
+    "nameBn": "তেলেঙ্গাবাগান",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 1504,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "Gouribari Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Arif Road",
+    "neighbourhood": "Ultadanga",
+    "lat": 22.5945791,
+    "lon": 88.379144,
+    "geocodeMethod": "osm",
+    "nameBn": "গৌরীবাড়ি সার্বজনীন",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 1015,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "United Club",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Ultadanga Main Road",
+    "neighbourhood": "Ultadanga",
+    "lat": 22.5911417,
+    "lon": 88.3910864,
+    "geocodeMethod": "osm",
+    "nameBn": "ইউনাইটেড ক্লাব",
+    "nearestMetro": {
+      "name": "Bengal Chemical",
+      "distanceMeters": 1617,
+      "nameBn": "বেঙ্গল কেমিক্যালস"
+    }
+  },
+  {
+    "name": "Bagbazar Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Galiff Street",
+    "neighbourhood": "Bagbazar",
+    "lat": 22.604699,
+    "lon": 88.366135,
+    "geocodeMethod": "osm",
+    "nameBn": "বাগবাজার সার্বজনীন",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 753,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "Shyam Square",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Bidhan Sarani",
+    "neighbourhood": "Shyambazar",
+    "lat": 22.6009353,
+    "lon": 88.3687747,
+    "geocodeMethod": "osm",
+    "nameBn": "শ্যাম স্কোয়ার",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 385,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "9-Er Pally Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Jatindra Mohan Avenue",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.581513,
+    "lon": 88.354672,
+    "geocodeMethod": "geocoded",
+    "nameBn": "৯ এর পল্লী সার্বজনীন",
+    "nearestMetro": {
+      "name": "Mahatma Gandhi Road",
+      "distanceMeters": 686,
+      "nameBn": "মহাত্মা গান্ধী রোড"
+    }
+  },
+  {
+    "name": "Maitra Sangha",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Bidhan Sarani",
+    "neighbourhood": "Shyambazar",
+    "lat": 22.592649,
+    "lon": 88.3645776,
+    "geocodeMethod": "osm",
+    "nameBn": "মৈত্র সংঘ",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 365,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    }
+  },
+  {
+    "name": "Nabin Sarkar St Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Arabinda Sarani",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.581396,
+    "lon": 88.357292,
+    "geocodeMethod": "geocoded",
+    "nameBn": "নবীন সরকার স্ট্রীট সার্বজনীন",
+    "nearestMetro": {
+      "name": "Mahatma Gandhi Road",
+      "distanceMeters": 418,
+      "nameBn": "মহাত্মা গান্ধী রোড"
+    }
+  },
+  {
+    "name": "Garpar Matri Mandir",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Raja Dinendra Street",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.5911444,
+    "lon": 88.3775688,
+    "geocodeMethod": "osm",
+    "nameBn": "গড়পাড় মাতৃ মন্দির",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 1247,
+      "nameBn": "শ্যামবাজার"
+    }
+  },
+  {
+    "name": "Brindaban Matri Mandir",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Maniktala Main Road",
+    "neighbourhood": "Maniktala",
+    "lat": 22.5866909,
+    "lon": 88.377534,
+    "geocodeMethod": "osm",
+    "nameBn": "বৃন্দাবন মাতৃ মন্দির",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 1499,
+      "nameBn": "গিরিশ পার্ক"
+    }
+  },
+  {
+    "name": "Mitali Kankurgachi",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Kankurgachi",
+    "neighbourhood": "Maniktala",
+    "lat": 22.5800311,
+    "lon": 88.3944125,
+    "geocodeMethod": "osm",
+    "nameBn": "মিতালি কাঁকুড়গাছি",
+    "nearestMetro": {
+      "name": "Bengal Chemical",
+      "distanceMeters": 707,
+      "nameBn": "বেঙ্গল কেমিক্যালস"
+    }
+  },
+  {
+    "name": "Trinayanee",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Narkeldanga Main Road",
+    "neighbourhood": "Maniktala",
+    "lat": 22.576125,
+    "lon": 88.375406,
+    "geocodeMethod": "geocoded",
+    "nameBn": "ত্রিনয়নী",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 1206,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Sovabazar Beniatola",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Sova Bazar Street",
+    "neighbourhood": "Kumartuli",
+    "lat": 22.5958115,
+    "lon": 88.3609599,
+    "geocodeMethod": "osm",
+    "nameBn": "শোভাবাজার বেনিয়াটোলা",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 435,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    }
+  },
+  {
+    "name": "20 Pally",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Sova Bazar Street",
+    "neighbourhood": "Kumartuli",
+    "lat": 22.604133,
+    "lon": 88.364593,
+    "geocodeMethod": "neighbourhood-anchor+fallback",
+    "nameBn": "২০ পল্লী",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 920,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    }
+  },
+  {
+    "name": "Ahiritola",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "B.K. Paul Avenue",
+    "neighbourhood": "Kumartuli",
+    "lat": 22.594838,
+    "lon": 88.357193,
+    "geocodeMethod": "osm",
+    "nameBn": "আহিরীটোলা",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 830,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    }
+  },
+  {
+    "name": "Rabindra Kanan",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Beadon Street",
+    "neighbourhood": "College Street",
+    "lat": 22.590711,
+    "lon": 88.3600991,
+    "geocodeMethod": "osm",
+    "nameBn": "রবীন্দ্র কানন",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 492,
+      "nameBn": "গিরিশ পার্ক"
+    }
+  },
+  {
+    "name": "Hari Ghosh St.",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Kashi Bose Lane",
+    "neighbourhood": "College Street",
+    "lat": 22.568953,
+    "lon": 88.360143,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "হরি ঘোষ স্ট্রীট.",
+    "nearestMetro": {
+      "name": "Central",
+      "distanceMeters": 418,
+      "nameBn": "সেন্ট্রাল"
+    }
+  },
+  {
+    "name": "Halsi Bagan",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "R.D. Street",
+    "neighbourhood": "Maniktala",
+    "lat": 22.587505,
+    "lon": 88.391583,
+    "geocodeMethod": "geocoded",
+    "nameBn": "হালসিবাগান",
+    "nearestMetro": {
+      "name": "Bengal Chemical",
+      "distanceMeters": 1296,
+      "nameBn": "বেঙ্গল কেমিক্যালস"
+    }
+  },
+  {
+    "name": "Chalta Bagan",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Vivekananda Road",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.585184,
+    "lon": 88.372081,
+    "geocodeMethod": "osm",
+    "nameBn": "চালতা বাগান",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 963,
+      "nameBn": "গিরিশ পার্ক"
+    }
+  },
+  {
+    "name": "Simla Bayam Samiti",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Muktaram Babu Street",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.58539,
+    "lon": 88.365127,
+    "geocodeMethod": "osm",
+    "nameBn": "সিমলা ব্যায়াম সমিতি",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 297,
+      "nameBn": "গিরিশ পার্ক"
+    }
+  },
+  {
+    "name": "Chorebagan Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Muktaram Babu Street",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.583511,
+    "lon": 88.363163,
+    "geocodeMethod": "osm",
+    "nameBn": "চোরাবাগান সার্বজনীন",
+    "nearestMetro": {
+      "name": "Mahatma Gandhi Road",
+      "distanceMeters": 344,
+      "nameBn": "মহাত্মা গান্ধী রোড"
+    }
+  },
+  {
+    "name": "Young Boys Club",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Rabindra Sarani",
+    "neighbourhood": "Kumartuli",
+    "lat": 22.5788831,
+    "lon": 88.3569652,
+    "geocodeMethod": "osm",
+    "nameBn": "ইয়ং বয়েজ ক্লাব",
+    "nearestMetro": {
+      "name": "Mahatma Gandhi Road",
+      "distanceMeters": 502,
+      "nameBn": "মহাত্মা গান্ধী রোড"
+    }
+  },
+  {
+    "name": "College Square",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "College Street",
+    "neighbourhood": "College Street",
+    "lat": 22.5745254,
+    "lon": 88.3644645,
+    "geocodeMethod": "osm",
+    "nameBn": "কলেজ স্কোয়ার",
+    "nearestMetro": {
+      "name": "Central",
+      "distanceMeters": 630,
+      "nameBn": "সেন্ট্রাল"
+    }
+  },
+  {
+    "name": "Ram Mohan Sammilani",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "K.C. Sen Street",
+    "neighbourhood": "College Street",
+    "lat": 22.548632,
+    "lon": 88.356166,
+    "geocodeMethod": "geocoded",
+    "nameBn": "রাম মোহন সম্মিলনী",
+    "nearestMetro": {
+      "name": "Maidan",
+      "distanceMeters": 763,
+      "nameBn": "ময়দান"
+    }
+  },
+  {
+    "name": "Sealdah Athletic Club",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Narkeldanga Main Road",
+    "neighbourhood": "Maniktala",
+    "lat": 22.5710272,
+    "lon": 88.3718742,
+    "geocodeMethod": "osm",
+    "nameBn": "শিয়ালদহ অ্যাথলেটিক ক্লাব",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 537,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Md. Ali Park",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Chittaranjan Avenue, near MG Road",
+    "neighbourhood": "Taltala",
+    "lat": 22.57724,
+    "lon": 88.360737,
+    "geocodeMethod": "osm",
+    "nameBn": "মহম্মদ আলি পার্ক",
+    "nearestMetro": {
+      "name": "Mahatma Gandhi Road",
+      "distanceMeters": 414,
+      "nameBn": "মহাত্মা গান্ধী রোড"
+    }
+  },
+  {
+    "name": "Pataldanga Sarodiya",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Sealdah Flyover",
+    "neighbourhood": "Sealdah",
+    "lat": 22.567966,
+    "lon": 88.371105,
+    "geocodeMethod": "geocoded",
+    "nameBn": "পাতালডাঙা সারদীয়া",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 203,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Subodh Mullick Sqr.",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "B.B. Ganguly Street",
+    "neighbourhood": "Taltala",
+    "lat": 22.563863,
+    "lon": 88.359691,
+    "geocodeMethod": "osm",
+    "nameBn": "সুবোধ মল্লিক স্কোয়ার",
+    "nearestMetro": {
+      "name": "Chandni Chowk",
+      "distanceMeters": 667,
+      "nameBn": "চাঁদনি চক"
+    }
+  },
+  {
+    "name": "Santosh Mitra Square",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Raja Ram Mohan Sarani, Sealdah",
+    "neighbourhood": "Taltala",
+    "lat": 22.5659287,
+    "lon": 88.3654392,
+    "geocodeMethod": "osm",
+    "nameBn": "সন্তোষ মিত্র স্কোয়ার",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 452,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Purbo Kalikata",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Beliaghata Main Road",
+    "neighbourhood": "Entally",
+    "lat": 22.56568,
+    "lon": 88.382155,
+    "geocodeMethod": "geocoded",
+    "nameBn": "পূর্ব কলিকাতা",
+    "nearestMetro": {
+      "name": "Phoolbagan",
+      "distanceMeters": 1097,
+      "nameBn": "ফুলবাগান"
+    }
+  },
+  {
+    "name": "Sharir Sangathan Samiti",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Chaulpatty Road",
+    "neighbourhood": "Entally",
+    "lat": 22.5620602,
+    "lon": 88.3803967,
+    "geocodeMethod": "osm",
+    "nameBn": "শরীর সংগঠন সমিতি",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 1201,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Taltala Children's Park (14 Palli)",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Surendra Nath Banerjee Road",
+    "neighbourhood": "Taltala",
+    "lat": 22.558161,
+    "lon": 88.36436,
+    "geocodeMethod": "osm",
+    "nameBn": "তালতলা চিলড্রেন্স পার্ক (১৪ পল্লী)",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 1092,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Taltala Sarbojanin Lord Para",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "A.J.C. Bose Road",
+    "neighbourhood": "Taltala",
+    "lat": 22.554545,
+    "lon": 88.362175,
+    "geocodeMethod": "osm",
+    "nameBn": "তালতলা সার্বজনীন লর্ড পাড়া",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 1552,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "24 Pally Udayan Sangha",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "C.I.T. Road",
+    "neighbourhood": "Entally",
+    "lat": 22.552977,
+    "lon": 88.372766,
+    "geocodeMethod": "geocoded",
+    "nameBn": "২৪ পল্লী উদয়ন সংঘ",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 1546,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Linton Street Children Youth Forum",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "C.I.T. Road South Avenue",
+    "neighbourhood": "Entally",
+    "lat": 22.5505083,
+    "lon": 88.3699317,
+    "geocodeMethod": "osm",
+    "nameBn": "লিন্টন স্ট্রীট চিলড্রেন্স যুব ফোরাম",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 1790,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    }
+  },
+  {
+    "name": "Adi Sammilita 57/58 Palli Sarbojanin Durgotsab",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Suhrawardy Avenue, Park Circus",
+    "neighbourhood": "Park Circus",
+    "lat": 22.543615,
+    "lon": 88.366763,
+    "geocodeMethod": "geocoded",
+    "nameBn": "আদি সম্মিলিত ৫৭/৫৮ পল্লী সার্বজনীন দুর্গোৎসব",
+    "nearestMetro": {
+      "name": "Maidan",
+      "distanceMeters": 1957,
+      "nameBn": "ময়দান"
+    }
+  },
+  {
+    "name": "Chakraberia Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Lala Lajpat Rai Sarani",
+    "neighbourhood": "Elgin Road",
+    "lat": 22.5335735,
+    "lon": 88.3521978,
+    "geocodeMethod": "osm",
+    "nameBn": "চক্রবেড়িয়া সার্বজনীন",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 646,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Gokhale Sporting",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "S.N. Pandit Street",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.5404444,
+    "lon": 88.3458391,
+    "geocodeMethod": "osm",
+    "nameBn": "গোখলে স্পোর্টিং",
+    "nearestMetro": {
+      "name": "Rabindra Sadan",
+      "distanceMeters": 194,
+      "nameBn": "রবীন্দ্র সদন"
+    }
+  },
+  {
+    "name": "Agradut 76 Palli",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "S.N. Pandit Street",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.53177,
+    "lon": 88.345786,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "অগ্রদূত ৭৬ পল্লী",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 158,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Uday Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Harish Chatterjee Street",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.5339834,
+    "lon": 88.3414188,
+    "geocodeMethod": "osm",
+    "nameBn": "উদয় সংঘ",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 472,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Kalighat Milan Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Harish Mukherjee Road",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.5245094,
+    "lon": 88.3410755,
+    "geocodeMethod": "osm",
+    "nameBn": "কালীঘাট মিলন সংঘ",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 556,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Harish Park Byayam Samiti",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "A.T.M. Road",
+    "neighbourhood": "Elgin Road",
+    "lat": 22.5305447,
+    "lon": 88.3436719,
+    "geocodeMethod": "osm",
+    "nameBn": "হরিশ পার্ক ব্যায়াম সমিতি",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 374,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "22 Palli",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Chakraberia Madhab Street",
+    "neighbourhood": "Elgin Road",
+    "lat": 22.535645,
+    "lon": 88.352112,
+    "geocodeMethod": "geocoded",
+    "nameBn": "২২ পল্লী",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 1403,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "AAEI",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Sarat Bose Road",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.513645,
+    "lon": 88.353072,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "এ এ ই আই",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 825,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Padmapukur Barwari",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Chakraberia Road",
+    "neighbourhood": "Elgin Road",
+    "lat": 22.533573,
+    "lon": 88.352198,
+    "geocodeMethod": "geocoded",
+    "nameBn": "পদ্মপুকুর বারোয়ারি",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 646,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Adi Ballygunge Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Samsul Huda Road",
+    "neighbourhood": "Ballygunge",
+    "lat": 22.5317282,
+    "lon": 88.3720747,
+    "geocodeMethod": "osm",
+    "nameBn": "আদি বালিগঞ্জ সার্বজনীন",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 2602,
+      "nameBn": "ভি আই পি বাজার"
+    }
+  },
+  {
+    "name": "Ray Street Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Allenby Road",
+    "neighbourhood": "Elgin Road",
+    "lat": 22.5356451,
+    "lon": 88.352112,
+    "geocodeMethod": "osm",
+    "nameBn": "রায় স্ট্রীট সার্বজনীন",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 692,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Padmapukur Youth Assn.",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Ramesh Mitra Road",
+    "neighbourhood": "Hazra",
+    "lat": 22.528888,
+    "lon": 88.347729,
+    "geocodeMethod": "geocoded",
+    "nameBn": "পদ্মপুকুর যুব অ্যাসোসিয়েশন.",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 512,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "23 Palli",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Ramesh Mitra Road",
+    "neighbourhood": "Hazra",
+    "lat": 22.52889,
+    "lon": 88.347832,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "২৩ পল্লী",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 545,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Hazra Park Durgotsav",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Townsend Road",
+    "neighbourhood": "Hazra",
+    "lat": 22.524838,
+    "lon": 88.3461413,
+    "geocodeMethod": "osm",
+    "nameBn": "হাজরা পার্ক দুর্গোৎসব",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 83,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Bakul Bagan Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "P. Mullick Road",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.526819,
+    "lon": 88.347954,
+    "geocodeMethod": "osm",
+    "nameBn": "বকুল বাগান সার্বজনীন",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 333,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Maddox Square",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Ritchi Road",
+    "neighbourhood": "Gariahat",
+    "lat": 22.5265122,
+    "lon": 88.354853,
+    "geocodeMethod": "osm",
+    "nameBn": "ম্যাডক্স স্কোয়ার",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 900,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "21 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Broad Street",
+    "neighbourhood": "Ballygunge",
+    "lat": 22.5292355,
+    "lon": 88.368908,
+    "geocodeMethod": "osm",
+    "nameBn": "২১ পল্লী",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 2401,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Durga Bari",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Rifle Range Road",
+    "neighbourhood": "Ballygunge",
+    "lat": 22.529755,
+    "lon": 88.372279,
+    "geocodeMethod": "geocoded",
+    "nameBn": "দুর্গা বাড়ি",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 2524,
+      "nameBn": "ভি আই পি বাজার"
+    }
+  },
+  {
+    "name": "Phalguni Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Swinhoe Street",
+    "neighbourhood": "Ballygunge",
+    "lat": 22.5225496,
+    "lon": 88.3660066,
+    "geocodeMethod": "osm",
+    "nameBn": "ফাল্গুনী সংঘ",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 2014,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Forward Club",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Kalighat Road",
+    "neighbourhood": "Kalighat",
+    "lat": 22.5231254,
+    "lon": 88.3436327,
+    "geocodeMethod": "osm",
+    "nameBn": "ফরওয়ার্ড ক্লাব",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 313,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "64 Pally Durga Puja",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Manohar Pukur Road",
+    "neighbourhood": "Rashbehari Avenue",
+    "lat": 22.5206027,
+    "lon": 88.3474513,
+    "geocodeMethod": "osm",
+    "nameBn": "৬৪ পল্লী দুর্গা পূজা",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 407,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Matri Mandir",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "D. Park Road",
+    "neighbourhood": "Rashbehari Avenue",
+    "lat": 22.5195107,
+    "lon": 88.3507497,
+    "geocodeMethod": "osm",
+    "nameBn": "মাতৃ মন্দির",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 583,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Dakshin Kalikata Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Tilak Road",
+    "neighbourhood": "Rashbehari Avenue",
+    "lat": 22.521221,
+    "lon": 88.370305,
+    "geocodeMethod": "geocoded",
+    "nameBn": "দক্ষিণ কলিকাতা সার্বজনীন",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 2470,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Tridhara Sammilani",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Panditya Road",
+    "neighbourhood": "Gariahat",
+    "lat": 22.5195762,
+    "lon": 88.3553485,
+    "geocodeMethod": "osm",
+    "nameBn": "ত্রিধারা সম্মিলনী",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 1044,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Singhi Park Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Garcha 1st Lane",
+    "neighbourhood": "Gariahat",
+    "lat": 22.5212239,
+    "lon": 88.3630115,
+    "geocodeMethod": "osm",
+    "nameBn": "সিংহী পার্ক সার্বজনীন",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 1730,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Hindusthan Club",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Hindusthan Road",
+    "neighbourhood": "Gariahat",
+    "lat": 22.519509,
+    "lon": 88.360593,
+    "geocodeMethod": "osm",
+    "nameBn": "হিন্দুস্থান ক্লাব",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 1540,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Ekdalia Evergreen",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Gariahat Road",
+    "neighbourhood": "Gariahat",
+    "lat": 22.5212825,
+    "lon": 88.3662336,
+    "geocodeMethod": "osm",
+    "nameBn": "একডালিয়া এভারগ্রীন",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 2055,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Badamtala Ashar Sangha",
+    "alsoKnownAs": "Ashar Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Kali Temple Road",
+    "neighbourhood": "Kalighat",
+    "lat": 22.5179272,
+    "lon": 88.3441647,
+    "geocodeMethod": "osm",
+    "nameBn": "বাদামতলা আষাঢ় সংঘ",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 209,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Chetla Agrani",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Peary Mohan Roy Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.5164347,
+    "lon": 88.3371893,
+    "geocodeMethod": "osm",
+    "nameBn": "চেতলা অগ্রণী",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 890,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Sarodiya Sammilani",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "KMC Park",
+    "neighbourhood": "Chetla",
+    "lat": 22.5117118,
+    "lon": 88.3430586,
+    "geocodeMethod": "osm",
+    "nameBn": "সারদীয়া সম্মিলনী",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 558,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Trikon Park",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "D.P.S. Road",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5135401,
+    "lon": 88.3446465,
+    "geocodeMethod": "osm",
+    "nameBn": "ত্রিকোণ পার্ক",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 391,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Adi Lake Palli",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Sarat Bose Road",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5150354,
+    "lon": 88.3498551,
+    "geocodeMethod": "osm",
+    "nameBn": "আদি লেক পল্লী",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 460,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Charu Avenue Nabapally Sangha",
+    "alsoKnownAs": "Nabapalli Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Charu Avenue",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.507389,
+    "lon": 88.3441019,
+    "geocodeMethod": "osm",
+    "nameBn": "নবপল্লী সংঘ",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 144,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Suruchi Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Charu Market",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5090969,
+    "lon": 88.3341832,
+    "geocodeMethod": "osm",
+    "nameBn": "সুরুচি সংঘ",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 1180,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Mudiali Club",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Abdul Rasul Avenue",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5100748,
+    "lon": 88.3466256,
+    "geocodeMethod": "osm",
+    "nameBn": "মুদিয়ালি ক্লাব",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 338,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Shib Mandir",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Lake Avenue Sebaksangha",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5110599,
+    "lon": 88.3500239,
+    "geocodeMethod": "osm",
+    "nameBn": "শিব মন্দির",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 631,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Lake Gardens People's Assn.",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Prince Anwar Shah Road",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.502241,
+    "lon": 88.362401,
+    "geocodeMethod": "geocoded",
+    "nameBn": "লেক গার্ডেনস পিপলস অ্যাসোসিয়েশন",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 1823,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Sanghati Puja Samiti",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Prince Anwar Shah Road",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.5028115,
+    "lon": 88.3594342,
+    "geocodeMethod": "osm",
+    "nameBn": "সংহতি পূজা সমিতি",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 1514,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "95 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Jodhpur Park",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.5083393,
+    "lon": 88.3632252,
+    "geocodeMethod": "osm",
+    "nameBn": "৯৫ পল্লী",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 1826,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Pally Mangal",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Jodhpur Park",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.502921,
+    "lon": 88.364595,
+    "geocodeMethod": "osm",
+    "nameBn": "পল্লী মঙ্গল",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2020,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Ballygunge Cultural",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Purna Das Road",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.5158837,
+    "lon": 88.3558166,
+    "geocodeMethod": "osm",
+    "nameBn": "বালিগঞ্জ কালচারাল",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 1030,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Samajsebi",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Southern Avenue",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.505606,
+    "lon": 88.363674,
+    "geocodeMethod": "geocoded",
+    "nameBn": "সমাজসেবী",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 1876,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Hindustan Park Sarbojonin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Hindustan Park",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.517867,
+    "lon": 88.362093,
+    "geocodeMethod": "osm",
+    "nameBn": "হিন্দুস্থান পার্ক সার্বজনীন",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 1673,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Gariahat Market",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Gariahat Road",
+    "neighbourhood": "Gariahat",
+    "lat": 22.527929,
+    "lon": 88.365965,
+    "geocodeMethod": "geocoded",
+    "nameBn": "গড়িয়াহাট মার্কেট",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 2139,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Kasba Uttarpara Arabinda Sporting Club",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Bijan Setu",
+    "neighbourhood": "Gariahat",
+    "lat": 22.520739,
+    "lon": 88.365115,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "কসবা উত্তরপাড়া অরবিন্দ স্পোর্টিং ক্লাব",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 1952,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Udayan",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Garden Reach Road",
+    "neighbourhood": "Garden Reach",
+    "lat": 22.547108,
+    "lon": 88.292424,
+    "geocodeMethod": "geocoded",
+    "nameBn": "উদয়ন",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 4467,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "Nabarag",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Gopal Dr. Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.5413045,
+    "lon": 88.3207911,
+    "geocodeMethod": "osm",
+    "nameBn": "নবরাগ",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2481,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "26 Palli",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Mohan Ch. Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.538525,
+    "lon": 88.318339,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "২৬ পল্লী",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2223,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "Kabitirtha Saradotsav",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Kabitirtha Park",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.541128,
+    "lon": 88.321603,
+    "geocodeMethod": "osm",
+    "nameBn": "কবিতীর্থ শারদোৎসব",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2453,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "Milan Sangha",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Ramkamal Street",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.540781,
+    "lon": 88.32348,
+    "geocodeMethod": "osm",
+    "nameBn": "মিলন সংঘ",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2406,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "75 Palli",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Karl Marx Sarani",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.538698,
+    "lon": 88.317565,
+    "geocodeMethod": "geocoded",
+    "nameBn": "৭৫ পল্লী",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2262,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "74 Palli",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "M Banerji Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.539237,
+    "lon": 88.318721,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "৭৪ পল্লী",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2291,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "Khidderpore Sarbojanin",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Dr Sudhir Bose Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.538423,
+    "lon": 88.324918,
+    "geocodeMethod": "osm",
+    "nameBn": "খিদিরপুর সার্বজনীন",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2147,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "25 Palli",
+    "zone": "III",
+    "zoneName": "Port Area",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.5384821,
+    "lon": 88.3266024,
+    "geocodeMethod": "osm",
+    "nameBn": "২৫ পল্লী",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 2070,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "C N Roy Rd Sarbojonin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "C N Roy Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.505238,
+    "lon": 88.371437,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "সি এন রায় রোড সার্বজনীন",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2674,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Golmath Durgapuja Samity",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "ATM Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.5269309,
+    "lon": 88.3495445,
+    "geocodeMethod": "osm",
+    "nameBn": "গোলমাঠ দুর্গাপূজা সমিতি",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 441,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Milan Tirtha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Sunil Nagar",
+    "neighbourhood": "Kasba",
+    "lat": 22.5286014,
+    "lon": 88.3931055,
+    "geocodeMethod": "osm",
+    "nameBn": "মিলন তীর্থ",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 541,
+      "nameBn": "ভি আই পি বাজার"
+    }
+  },
+  {
+    "name": "Rup Chand Mukherjee Sarbojonin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Rup Chand Mukherjee Lane",
+    "neighbourhood": "Behala",
+    "lat": 22.502411,
+    "lon": 88.320205,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "রূপ চাঁদ মুখার্জী সার্বজনীন",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 499,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "68 Palli",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Townsend Road",
+    "neighbourhood": "Hazra",
+    "lat": 22.524509,
+    "lon": 88.352421,
+    "geocodeMethod": "geocoded",
+    "nameBn": "৬৮ পল্লী",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 612,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Alipore Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Judges Court Road",
+    "neighbourhood": "Alipore",
+    "lat": 22.519627,
+    "lon": 88.3336573,
+    "geocodeMethod": "osm",
+    "nameBn": "আলিপুর সার্বজনীন",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 1029,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "78 Palli Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Judges Court Road",
+    "neighbourhood": "Alipore",
+    "lat": 22.5204514,
+    "lon": 88.3378755,
+    "geocodeMethod": "osm",
+    "nameBn": "৭৮ পল্লী সার্বজনীন",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 910,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Shree Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "S.N. Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.5207557,
+    "lon": 88.3449094,
+    "geocodeMethod": "osm",
+    "nameBn": "শ্রী সংঘ",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 411,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "64 Palli",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "S M Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.5206027,
+    "lon": 88.3474513,
+    "geocodeMethod": "osm",
+    "nameBn": "৬৪ পল্লী",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 407,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Sarbojanin Durgotsav (Akalbodhan)",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Alipore Road, Kolahol",
+    "neighbourhood": "Chetla",
+    "lat": 22.515992,
+    "lon": 88.332781,
+    "geocodeMethod": "geocoded",
+    "nameBn": "সার্বজনীন দুর্গোৎসব (অকালবোধন)",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 1001,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "Chetla Agrani",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "G. Auddy Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.5164347,
+    "lon": 88.3371893,
+    "geocodeMethod": "osm",
+    "nameBn": "চেতলা অগ্রণী",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 890,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Kalighat Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Basanta Roy Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.513765,
+    "lon": 88.351042,
+    "geocodeMethod": "geocoded",
+    "nameBn": "কালীঘাট সংঘ",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 636,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Golden Arrow Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Basanta Roy Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.516172,
+    "lon": 88.3477145,
+    "geocodeMethod": "osm",
+    "nameBn": "গোল্ডেন অ্যারো ক্লাব",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 207,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "95 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Rabindra Sarovar",
+    "neighbourhood": "Rabindra Sarovar",
+    "lat": 22.5083393,
+    "lon": 88.3632252,
+    "geocodeMethod": "osm",
+    "nameBn": "৯৫ পল্লী",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 1826,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Poddar Nagar Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Jodhpur Park",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.4982381,
+    "lon": 88.3692526,
+    "geocodeMethod": "osm",
+    "nameBn": "পোদ্দার নগর সার্বজনীন",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2637,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Bangur Avenue 'C' Block Durga Puja",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Block C, Bangur Avenue",
+    "neighbourhood": "Bangur Avenue",
+    "lat": 22.492846,
+    "lon": 88.355318,
+    "geocodeMethod": "geocoded",
+    "nameBn": "বাঙ্গুর অ্যাভিনিউ 'সি' ব্লক দুর্গাপূজা",
+    "nearestMetro": {
+      "name": "Central Park",
+      "distanceMeters": 12498,
+      "nameBn": "সেন্ট্রাল পার্ক"
+    }
+  },
+  {
+    "name": "Golf Green Sarodotsav",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Golf Green",
+    "neighbourhood": "Golf Green",
+    "lat": 22.493668,
+    "lon": 88.362397,
+    "geocodeMethod": "osm",
+    "nameBn": "গল্ফ গ্রীন শারদোৎসব",
+    "nearestMetro": {
+      "name": "Mahanayak Uttam Kumar",
+      "distanceMeters": 1782,
+      "nameBn": "মহানায়ক উত্তমকুমার"
+    }
+  },
+  {
+    "name": "Atlanta",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Golf Garden",
+    "neighbourhood": "Golf Green",
+    "lat": 22.4960176,
+    "lon": 88.3465458,
+    "geocodeMethod": "osm",
+    "nameBn": "আটলান্টা",
+    "nearestMetro": {
+      "name": "Mahanayak Uttam Kumar",
+      "distanceMeters": 204,
+      "nameBn": "মহানায়ক উত্তমকুমার"
+    }
+  },
+  {
+    "name": "Bharat Mata",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Raja Subodh Mullick Road",
+    "neighbourhood": "Jadavpur",
+    "lat": 22.4920428,
+    "lon": 88.3674609,
+    "geocodeMethod": "osm",
+    "nameBn": "ভারত মাতা",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 2524,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Rabindra Pally Mangal",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Baghajatin Station Road",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.482739,
+    "lon": 88.386671,
+    "geocodeMethod": "geocoded",
+    "nameBn": "রবীন্দ্র পল্লী মঙ্গল",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 651,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Bhatri Milan Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Raipur Road East",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.484791,
+    "lon": 88.37231,
+    "geocodeMethod": "geocoded",
+    "nameBn": "ভ্রাতৃ মিলন সংঘ",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 2089,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Pallishree Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Raipur Road East",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.4853416,
+    "lon": 88.3653902,
+    "geocodeMethod": "osm",
+    "nameBn": "পল্লীশ্রী সার্বজনীন",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 2050,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Naktala Sammilani Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Padma-shree",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.4788517,
+    "lon": 88.3678333,
+    "geocodeMethod": "osm",
+    "nameBn": "নাকতলা সম্মিলনী ক্লাব",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 2256,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Kendua Santi Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Raipur Road East",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.484225,
+    "lon": 88.387213,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "কেঁদুয়া শান্তি সংঘ",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 560,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Sebak Sangha Azadgarh",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Graham Road",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.4879099,
+    "lon": 88.3560969,
+    "geocodeMethod": "osm",
+    "nameBn": "সেবক সংঘ আজাদগড়",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1291,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Ranikuti",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Naktala Road",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.472842,
+    "lon": 88.367444,
+    "geocodeMethod": "geocoded",
+    "nameBn": "রানিকুঠি",
+    "nearestMetro": {
+      "name": "Kavi Nazrul",
+      "distanceMeters": 1644,
+      "nameBn": "কবি নজরুল"
+    }
+  },
+  {
+    "name": "45 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Naktala",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.48156,
+    "lon": 88.386587,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "৪৫ পল্লী",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 712,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Yatra Suru Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "EM Bypass Link Road",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.495779,
+    "lon": 88.382827,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "যাত্রা শুরু সংঘ",
+    "nearestMetro": {
+      "name": "Jyotirindra Nandi",
+      "distanceMeters": 1605,
+      "nameBn": "জ্যোতিরিন্দ্র নন্দী"
+    }
+  },
+  {
+    "name": "Baishnab Ghata Patuli",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "EM Bypass Link Road",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.497287,
+    "lon": 88.382422,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "বৈষ্ণব ঘাটা পাটুলি",
+    "nearestMetro": {
+      "name": "Jyotirindra Nandi",
+      "distanceMeters": 1657,
+      "nameBn": "জ্যোতিরিন্দ্র নন্দী"
+    }
+  },
+  {
+    "name": "Kanungo Park Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Garia Traffic Guard",
+    "neighbourhood": "Garia",
+    "lat": 22.46577,
+    "lon": 88.377808,
+    "geocodeMethod": "geocoded",
+    "nameBn": "কানুনগো পার্ক সার্বজনীন",
+    "nearestMetro": {
+      "name": "Kavi Nazrul",
+      "distanceMeters": 321,
+      "nameBn": "কবি নজরুল"
+    }
+  },
+  {
+    "name": "Ballygunj Purbapally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Bijan Setu",
+    "neighbourhood": "Gariahat",
+    "lat": 22.521883,
+    "lon": 88.370968,
+    "geocodeMethod": "osm",
+    "nameBn": "বালিগঞ্জ পূর্বপল্লী",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 2529,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Rajdanga Naboday Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Picnic Garden Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.516056,
+    "lon": 88.390156,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "রাজডাঙা নবোদয় সংঘ",
+    "nearestMetro": {
+      "name": "Hemanta Mukhopadhyay",
+      "distanceMeters": 1166,
+      "nameBn": "হেমন্ত মুখোপাধ্যায়"
+    }
+  },
+  {
+    "name": "Deshbandhu Boy's",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Kasba",
+    "neighbourhood": "Kasba",
+    "lat": 22.504435,
+    "lon": 88.372166,
+    "geocodeMethod": "geocoded",
+    "nameBn": "দেশবন্ধু বয়েজ",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2757,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Bose Pukur",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Kasba",
+    "neighbourhood": "Kasba",
+    "lat": 22.504076,
+    "lon": 88.371956,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "বসু পুকুর",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2741,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Bosepukur Talbagan",
+    "alsoKnownAs": "Tal Bagan",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Kasba",
+    "neighbourhood": "Kasba",
+    "lat": 22.519091,
+    "lon": 88.3827372,
+    "geocodeMethod": "osm",
+    "nameBn": "বোসপুকুর তালবাগান",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 1519,
+      "nameBn": "ভি আই পি বাজার"
+    }
+  },
+  {
+    "name": "Ramlal Bazar Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "B K Chatterjee Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.5075346,
+    "lon": 88.3851511,
+    "geocodeMethod": "osm",
+    "nameBn": "রামলাল বাজার সার্বজনীন",
+    "nearestMetro": {
+      "name": "Kavi Sukanta",
+      "distanceMeters": 1647,
+      "nameBn": "কবি সুকান্ত"
+    }
+  },
+  {
+    "name": "Purbachal Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "B K Chatterjee Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.5060875,
+    "lon": 88.39853,
+    "geocodeMethod": "osm",
+    "nameBn": "পূর্বাচল সার্বজনীন",
+    "nearestMetro": {
+      "name": "Kavi Sukanta",
+      "distanceMeters": 268,
+      "nameBn": "কবি সুকান্ত"
+    }
+  },
+  {
+    "name": "R K Chatterjee Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "R K Chatterjee Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.5176837,
+    "lon": 88.3782632,
+    "geocodeMethod": "osm",
+    "nameBn": "আর কে চ্যাটার্জী সার্বজনীন",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 2003,
+      "nameBn": "ভি আই পি বাজার"
+    }
+  },
+  {
+    "name": "Kalitala Sporting",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Purbachal Main Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.5061073,
+    "lon": 88.3973606,
+    "geocodeMethod": "osm",
+    "nameBn": "কালীতলা স্পোর্টিং",
+    "nearestMetro": {
+      "name": "Kavi Sukanta",
+      "distanceMeters": 384,
+      "nameBn": "কবি সুকান্ত"
+    }
+  },
+  {
+    "name": "Madhya Garfa Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Garfa Main Road",
+    "neighbourhood": "Jadavpur Kolkata",
+    "lat": 22.5025811,
+    "lon": 88.3853558,
+    "geocodeMethod": "osm",
+    "nameBn": "মধ্য গড়ফা সার্বজনীন",
+    "nearestMetro": {
+      "name": "Kavi Sukanta",
+      "distanceMeters": 1635,
+      "nameBn": "কবি সুকান্ত"
+    }
+  },
+  {
+    "name": "Saraswati Sammilani",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "S. Ghosh Garden Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.510681,
+    "lon": 88.3764544,
+    "geocodeMethod": "osm",
+    "nameBn": "সরস্বতী সম্মিলনী",
+    "nearestMetro": {
+      "name": "Kavi Sukanta",
+      "distanceMeters": 2591,
+      "nameBn": "কবি সুকান্ত"
+    }
+  },
+  {
+    "name": "Selimpur Jagaran",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Dhakuria",
+    "neighbourhood": "Kasba",
+    "lat": 22.5048146,
+    "lon": 88.3708356,
+    "geocodeMethod": "osm",
+    "nameBn": "সেলিমপুর জাগরণ",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2617,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Aikatan",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Dhakuria",
+    "neighbourhood": "Kasba",
+    "lat": 22.5041897,
+    "lon": 88.3685991,
+    "geocodeMethod": "osm",
+    "nameBn": "ঐকতান",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2397,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Sahidnagar Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Jadavpur",
+    "neighbourhood": "Jadavpur",
+    "lat": 22.504606,
+    "lon": 88.37334,
+    "geocodeMethod": "osm",
+    "nameBn": "শহীদনগর সার্বজনীন",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2875,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Santoshpur Trikone Park",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Santoshpur Avenue",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.4931845,
+    "lon": 88.3784524,
+    "geocodeMethod": "osm",
+    "nameBn": "সন্তোষপুর ত্রিকোণ পার্ক",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 1738,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Santoshpur Avenue South Club",
+    "formerName": "Avenue Pally Mangal",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Santoshpur Avenue",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.4896698,
+    "lon": 88.382945,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 1141,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Purba Rajpur",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Santoshpur",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.4896149,
+    "lon": 88.3915957,
+    "geocodeMethod": "osm",
+    "nameBn": "পূর্ব রাজপুর",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 559,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Mukundapur Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "EM Bypass",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.4917941,
+    "lon": 88.4047637,
+    "geocodeMethod": "osm",
+    "nameBn": "মুকুন্দপুর সার্বজনীন",
+    "nearestMetro": {
+      "name": "Jyotirindra Nandi",
+      "distanceMeters": 776,
+      "nameBn": "জ্যোতিরিন্দ্র নন্দী"
+    }
+  },
+  {
+    "name": "Parnashree Palli",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Taratola Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5090184,
+    "lon": 88.2991427,
+    "geocodeMethod": "osm",
+    "nameBn": "পর্ণশ্রী পল্লী",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 2187,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Naskarpur Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Taratola Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5071048,
+    "lon": 88.3122867,
+    "geocodeMethod": "osm",
+    "nameBn": "নাসকরপুর সার্বজনীন",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 834,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Agradut Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.5025992,
+    "lon": 88.3119235,
+    "geocodeMethod": "osm",
+    "nameBn": "অগ্রদূত ক্লাব",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 705,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Sakuntala Park",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.541265,
+    "lon": 88.325866,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "শকুন্তলা পার্ক",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 2248,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Netaji Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Netaji Subhas Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5051562,
+    "lon": 88.3114334,
+    "geocodeMethod": "osm",
+    "nameBn": "নেতাজি সংঘ",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 962,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Evergreen Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.5069327,
+    "lon": 88.2978319,
+    "geocodeMethod": "osm",
+    "nameBn": "এভারগ্রীন ক্লাব",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 2318,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Bandhudal",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Netaji Subhas Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5022731,
+    "lon": 88.3138831,
+    "geocodeMethod": "osm",
+    "nameBn": "বন্ধুদল",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 531,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Netaji Sangha Bakultala",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.4854461,
+    "lon": 88.3017864,
+    "geocodeMethod": "osm",
+    "nameBn": "নেতাজি সংঘ বকুলতলা",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 1210,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Arcadia",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.4936361,
+    "lon": 88.313969,
+    "geocodeMethod": "osm",
+    "nameBn": "আর্কেডিয়া",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 669,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Bakultala Sarbojonin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.4840728,
+    "lon": 88.2992668,
+    "geocodeMethod": "osm",
+    "nameBn": "বকুলতলা সার্বজনীন",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 1495,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Natunpara Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.541272,
+    "lon": 88.32584,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "নতুনপাড়া সার্বজনীন",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 2251,
+      "nameBn": "নেতাজি ভবন"
+    }
+  },
+  {
+    "name": "Barisha Nabin Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Barisha",
+    "lat": 22.4832849,
+    "lon": 88.3112283,
+    "geocodeMethod": "geocoded",
+    "nameBn": "বারিশা নবীন সংঘ",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 504,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Barisha Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.541273,
+    "lon": 88.325839,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "বারিশা সার্বজনীন",
+    "nearestMetro": {
+      "name": "Sakher Bazar",
+      "distanceMeters": 7564,
+      "nameBn": "সখের বাজার"
+    }
+  },
+  {
+    "name": "Bhola Maheshwartala Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Behala",
+    "neighbourhood": "Behala",
+    "lat": 22.4808452,
+    "lon": 88.3088441,
+    "geocodeMethod": "osm",
+    "nameBn": "ভোলা মহেশ্বরতলা সার্বজনীন",
+    "nearestMetro": {
+      "name": "Sakher Bazar",
+      "distanceMeters": 676,
+      "nameBn": "সখের বাজার"
+    }
+  },
+  {
+    "name": "Udayan Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Behala",
+    "neighbourhood": "Behala",
+    "lat": 22.500096,
+    "lon": 88.321535,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "উদয়ন পল্লী",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 451,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Aikya Sammilani",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Taratola Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5045849,
+    "lon": 88.3178709,
+    "geocodeMethod": "osm",
+    "nameBn": "ঐক্য সম্মিলনী",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 431,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Behala Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "S.N. Roy Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5053684,
+    "lon": 88.3142848,
+    "geocodeMethod": "osm",
+    "nameBn": "বেহালা ক্লাব",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 677,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Behala Young",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "S.N. Roy Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5109146,
+    "lon": 88.3235448,
+    "geocodeMethod": "osm",
+    "nameBn": "বেহালা ইয়ং",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 484,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Behala 29 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "S.N. Roy Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5070281,
+    "lon": 88.3227612,
+    "geocodeMethod": "osm",
+    "nameBn": "বেহালা ২৯ পল্লী",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 255,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Sahapur Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "S.N. Roy Road",
+    "neighbourhood": "Behala",
+    "lat": 22.500953,
+    "lon": 88.320318,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "সাহাপুর সংঘ",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 388,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Nandana Yuba Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Roy Bahadur Road",
+    "neighbourhood": "Behala",
+    "lat": 22.501857,
+    "lon": 88.32536,
+    "geocodeMethod": "osm",
+    "nameBn": "নন্দনা যুব সংঘ",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 825,
+      "nameBn": "তারাতলা"
+    }
+  },
+  {
+    "name": "Mitra Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Roy Bahadur Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5007941,
+    "lon": 88.3227612,
+    "geocodeMethod": "osm",
+    "nameBn": "মিত্র সংঘ",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 597,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Behala Shree Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "B.L. Saha Road",
+    "neighbourhood": "Behala",
+    "lat": 22.49791,
+    "lon": 88.3203633,
+    "geocodeMethod": "osm",
+    "nameBn": "বেহালা শ্রী সংঘ",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 320,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Behala Natun Dal",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Bhupen Roy Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5003,
+    "lon": 88.31973,
+    "geocodeMethod": "verified",
+    "nameBn": "বেহালা নতুন দল",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 295,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Behala 11 Pally Youth Association",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "B.L. Saha Road",
+    "neighbourhood": "Behala",
+    "lat": 22.502936,
+    "lon": 88.320423,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "বেহালা ১১ পল্লী যুব অ্যাসোসিয়েশন",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 559,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Suktara Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "B.L. Saha Road",
+    "neighbourhood": "Behala",
+    "lat": 22.496007,
+    "lon": 88.3400604,
+    "geocodeMethod": "osm",
+    "nameBn": "শুকতারা সংঘ",
+    "nearestMetro": {
+      "name": "Mahanayak Uttam Kumar",
+      "distanceMeters": 535,
+      "nameBn": "মহানায়ক উত্তমকুমার"
+    }
+  },
+  {
+    "name": "Pragati Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Bhupen Roy Road",
+    "neighbourhood": "Behala",
+    "lat": 22.4939815,
+    "lon": 88.3172975,
+    "geocodeMethod": "osm",
+    "nameBn": "প্রগতি সংঘ",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 531,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Nabalila Para United Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Ram Mohan Roy Road",
+    "neighbourhood": "Barisha",
+    "lat": 22.4880031,
+    "lon": 88.3142317,
+    "geocodeMethod": "osm",
+    "nameBn": "নবলীলা পাড়া ইউনাইটেড ক্লাব",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 113,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Jagarani",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Ram Mohan Roy Road",
+    "neighbourhood": "Barisha",
+    "lat": 22.4897966,
+    "lon": 88.3222429,
+    "geocodeMethod": "osm",
+    "nameBn": "জাগরণী",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 950,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Player's Corner",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "James Long Sarani",
+    "neighbourhood": "Barisha",
+    "lat": 22.485327,
+    "lon": 88.3138,
+    "geocodeMethod": "osm",
+    "nameBn": "প্লেয়ার্স কর্নার",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 230,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Janakalyan",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "James Long Sarani",
+    "neighbourhood": "Barisha",
+    "lat": 22.4846152,
+    "lon": 88.3126603,
+    "geocodeMethod": "osm",
+    "nameBn": "জনকল্যাণ",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 313,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Barisha Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "James Long Sarani",
+    "neighbourhood": "Barisha",
+    "lat": 22.480715,
+    "lon": 88.312953,
+    "geocodeMethod": "osm",
+    "nameBn": "বারিশা ক্লাব",
+    "nearestMetro": {
+      "name": "Sakher Bazar",
+      "distanceMeters": 721,
+      "nameBn": "সখের বাজার"
+    }
+  },
+  {
+    "name": "Barisha Tarun Tirtha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "James Long Sarani",
+    "neighbourhood": "Barisha",
+    "lat": 22.4804067,
+    "lon": 88.3177996,
+    "geocodeMethod": "osm",
+    "nameBn": "বারিশা তরুণ তীর্থ",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 896,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Uttar Barisha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "James Long Sarani",
+    "neighbourhood": "Barisha",
+    "lat": 22.4805582,
+    "lon": 88.3143858,
+    "geocodeMethod": "osm",
+    "nameBn": "উত্তর বারিশা",
+    "nearestMetro": {
+      "name": "Sakher Bazar",
+      "distanceMeters": 781,
+      "nameBn": "সখের বাজার"
+    }
+  },
+  {
+    "name": "Tapoban",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "James Long Sarani",
+    "neighbourhood": "Barisha",
+    "lat": 22.4764892,
+    "lon": 88.3103364,
+    "geocodeMethod": "osm",
+    "nameBn": "তপোবন",
+    "nearestMetro": {
+      "name": "Sakher Bazar",
+      "distanceMeters": 186,
+      "nameBn": "সখের বাজার"
+    }
+  },
+  {
+    "name": "Adarsha Samity",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Haridevpur",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.4761047,
+    "lon": 88.3342746,
+    "geocodeMethod": "osm",
+    "nameBn": "আদর্শ সমিতি",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1322,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Vivekananda Park",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Haridevpur",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.465905,
+    "lon": 88.330489,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "বিবেকানন্দ পার্ক",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 2314,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Ajeyo Sanghati",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Haridevpur",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.46526,
+    "lon": 88.331155,
+    "geocodeMethod": "neighbourhood-anchor",
+    "nameBn": "অজেয় সংহতি",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 2321,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Vivekananda Sporting",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "M G Road",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.476316,
+    "lon": 88.338593,
+    "geocodeMethod": "osm",
+    "nameBn": "বিবেকানন্দ স্পোর্টিং",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 922,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "41 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "M G Road",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.4830205,
+    "lon": 88.3384178,
+    "geocodeMethod": "osm",
+    "nameBn": "৪১ পল্লী",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 811,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Nabin Sathi Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Mahatma Gandhi Road",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.4700831,
+    "lon": 88.3384478,
+    "geocodeMethod": "osm",
+    "nameBn": "নবীন সাথী ক্লাব",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1440,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Milan Sangha (Behala)",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Mahatma Gandhi Road",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.462254,
+    "lon": 88.332078,
+    "geocodeMethod": "street-snapped",
+    "nameBn": "মিলন সংঘ (বেহালা)",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 2527,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "97 Pally Bharat Mata",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Putiary",
+    "neighbourhood": "Putiary",
+    "lat": 22.4870491,
+    "lon": 88.3448453,
+    "geocodeMethod": "osm",
+    "nameBn": "৯৭ পল্লী ভারত মাতা",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 684,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Sangha Sree",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Sadananda Road",
+    "neighbourhood": "Hazra",
+    "lat": 22.5219241,
+    "lon": 88.3459144,
+    "geocodeMethod": "osm",
+    "nameBn": "সংঘশ্রী",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 255,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Abasar",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Ramesh Mitra Road",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.5281391,
+    "lon": 88.3486687,
+    "geocodeMethod": "osm",
+    "nameBn": "অবসর",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 497,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Parashar Road",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Lake Road",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5154251,
+    "lon": 88.3489576,
+    "geocodeMethod": "osm",
+    "nameBn": "পরাশর রোড",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 358,
+      "nameBn": "কালীঘাট"
+    }
+  },
+  {
+    "name": "Jodhpur Park",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Jodhpur Park",
+    "neighbourhood": "Jodhpur Park",
+    "lat": 22.504634,
+    "lon": 88.365491,
+    "geocodeMethod": "osm",
+    "nameBn": "যোধপুর পার্ক",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2074,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Pancha Durga",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Boral",
+    "neighbourhood": "Garia",
+    "lat": 22.4615415,
+    "lon": 88.3782966,
+    "geocodeMethod": "osm",
+    "nameBn": "পঞ্চ দুর্গা",
+    "nearestMetro": {
+      "name": "Kavi Nazrul",
+      "distanceMeters": 374,
+      "nameBn": "কবি নজরুল"
+    }
+  },
+  {
+    "name": "Kheyali Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Boral",
+    "neighbourhood": "Garia",
+    "lat": 22.4600389,
+    "lon": 88.3785685,
+    "geocodeMethod": "osm",
+    "nameBn": "খেয়ালি সংঘ",
+    "nearestMetro": {
+      "name": "Gitanjali",
+      "distanceMeters": 1383,
+      "nameBn": "গীতাঞ্জলি"
+    }
+  },
+  {
+    "name": "Boral Sukanta Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Boral",
+    "neighbourhood": "Garia",
+    "lat": 22.4476704,
+    "lon": 88.3777089,
+    "geocodeMethod": "osm",
+    "nameBn": "বোড়াল সুকান্ত সংঘ",
+    "nearestMetro": {
+      "name": "Kavi Nazrul",
+      "distanceMeters": 1865,
+      "nameBn": "কবি নজরুল"
+    }
+  },
+  {
+    "name": "Naba Durga",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Garia Station Road",
+    "neighbourhood": "Garia",
+    "lat": 22.4624838,
+    "lon": 88.3809162,
+    "geocodeMethod": "osm",
+    "nameBn": "নব দুর্গা",
+    "nearestMetro": {
+      "name": "Kavi Nazrul",
+      "distanceMeters": 202,
+      "nameBn": "কবি নজরুল"
+    }
+  },
+  {
+    "name": "Bansdroni Sarat Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "N S C Bose Road",
+    "neighbourhood": "Garia",
+    "lat": 22.4752288,
+    "lon": 88.3594512,
+    "geocodeMethod": "osm",
+    "nameBn": "বাঁশদ্রোণী সরৎ সংঘ",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1523,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Moore Avenue Puja Committee",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Chandi Ghosh Road",
+    "neighbourhood": "Tollygunge",
+    "lat": 22.4818451,
+    "lon": 88.3501318,
+    "geocodeMethod": "osm",
+    "nameBn": "মুর অ্যাভিনিউ পূজা কমিটি",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 435,
+      "nameBn": "নেতাজি"
+    }
+  },
+  {
+    "name": "Naktala Udayan Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Naktala Road",
+    "neighbourhood": "Garia",
+    "lat": 22.4743499,
+    "lon": 88.3665305,
+    "geocodeMethod": "osm",
+    "nameBn": "নাকতলা উদয়ন সংঘ",
+    "nearestMetro": {
+      "name": "Kavi Nazrul",
+      "distanceMeters": 1819,
+      "nameBn": "কবি নজরুল"
+    }
+  },
+  {
+    "name": "Vidyasagar Central Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Baghajatin Station Road",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.4809188,
+    "lon": 88.3748767,
+    "geocodeMethod": "osm",
+    "nameBn": "বিদ্যাসাগর সেন্ট্রাল ক্লাব",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 1873,
+      "nameBn": "সত্যজিৎ রায়"
+    }
+  },
+  {
+    "name": "Gharana",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Raipur Road East",
+    "neighbourhood": "Jadavpur",
+    "lat": 22.496103,
+    "lon": 88.367127,
+    "geocodeMethod": "geocoded",
+    "nameBn": "ঘরানা",
+    "nearestMetro": {
+      "name": "Mahanayak Uttam Kumar",
+      "distanceMeters": 2269,
+      "nameBn": "মহানায়ক উত্তমকুমার"
+    }
+  },
+  {
+    "name": "Sunil Nagar",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "C N Roy Road",
+    "neighbourhood": "Kasba",
+    "lat": 22.528513,
+    "lon": 88.3847959,
+    "geocodeMethod": "osm",
+    "nameBn": "সুনীল নগর",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 1249,
+      "nameBn": "ভি আই পি বাজার"
+    }
+  },
+  {
+    "name": "VIP Nagar",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "E M Bypass",
+    "neighbourhood": "Kasba",
+    "lat": 22.5236955,
+    "lon": 88.3988632,
+    "geocodeMethod": "osm",
+    "nameBn": "ভিআইপি নগর",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 292,
+      "nameBn": "ভি আই পি বাজার"
+    }
+  },
+  {
+    "name": "Kolahol",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Alipore Road",
+    "neighbourhood": "Alipore",
+    "lat": 22.5159918,
+    "lon": 88.3327812,
+    "geocodeMethod": "osm",
+    "nameBn": "কোলাহল",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 1001,
+      "nameBn": "মাঝেরহাট"
+    }
+  },
+  {
+    "name": "Behala Chowrasta",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Biren Roy Road West",
+    "neighbourhood": "Behala",
+    "lat": 22.485082,
+    "lon": 88.307708,
+    "geocodeMethod": "geocoded",
+    "nameBn": "বেহালা চৌরাস্তা",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 635,
+      "nameBn": "বেহালা চৌরাস্তা"
+    }
+  },
+  {
+    "name": "Hindusthan Club",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "B.L. Saha Road",
+    "neighbourhood": "Behala",
+    "lat": 22.519509,
+    "lon": 88.360593,
+    "geocodeMethod": "osm",
+    "nameBn": "হিন্দুস্থান ক্লাব",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 1540,
+      "nameBn": "যতীন দাস পার্ক"
+    }
+  },
+  {
+    "name": "Pally Mangal",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "South Avenue",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.502921,
+    "lon": 88.364595,
+    "geocodeMethod": "osm",
+    "nameBn": "পল্লী মঙ্গল",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2020,
+      "nameBn": "রবীন্দ্র সরোবর"
+    }
+  },
+  {
+    "name": "Cossipore Naba Yuvak Sangha",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Rustamji Parsi Road",
+    "neighbourhood": "Sinthee",
+    "lat": 22.6262499,
+    "lon": 88.3716766,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 2772,
+      "nameBn": "শ্যামবাজার"
+    },
+    "_osm": "node/10080423244"
+  },
+  {
+    "name": "Paikpara 14 Pally",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Beerpara Lane",
+    "neighbourhood": "Belgachia",
+    "lat": 22.6185923,
+    "lon": 88.3898967,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Dum Dum",
+      "distanceMeters": 416,
+      "nameBn": "দমদম"
+    },
+    "_osm": "node/10080423247"
+  },
+  {
+    "name": "Jagat Mukherjee Park Sadharan Durgotsab",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Bupendra Bose Avenue",
+    "neighbourhood": "Bagbazar",
+    "lat": 22.5997035,
+    "lon": 88.3661861,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 437,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    },
+    "_osm": "node/10081941246"
+  },
+  {
+    "name": "Sovabazar 9 Pally Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Naba Kumar Raha Lane",
+    "neighbourhood": "Shyambazar",
+    "lat": 22.595794,
+    "lon": 88.3693608,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 427,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    },
+    "_osm": "node/10081941249"
+  },
+  {
+    "name": "Ultadanga Pallyshree",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Ariff Rd",
+    "neighbourhood": "Ultadanga",
+    "lat": 22.5957897,
+    "lon": 88.3844401,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 1372,
+      "nameBn": "শ্যামবাজার"
+    },
+    "_osm": "node/10081941253"
+  },
+  {
+    "name": "Nabin Sarkar Street Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Sahitya Parishad Street",
+    "neighbourhood": "Shyambazar",
+    "lat": 22.5916067,
+    "lon": 88.3728214,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 915,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    },
+    "_osm": "node/10081965664"
+  },
+  {
+    "name": "Kashi Bose Lane",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Dani Gosh Street",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.589362,
+    "lon": 88.365247,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 342,
+      "nameBn": "গিরিশ পার্ক"
+    },
+    "_osm": "node/10082038817"
+  },
+  {
+    "name": "Hari Ghost Street",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Mahendra Goswami Lane",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.5874216,
+    "lon": 88.365584,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 273,
+      "nameBn": "গিরিশ পার্ক"
+    },
+    "_osm": "node/10082038818"
+  },
+  {
+    "name": "Sobhbazar Beniatala",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Daw Ln",
+    "neighbourhood": "Bagbazar",
+    "lat": 22.5958115,
+    "lon": 88.3609599,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 435,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    },
+    "_osm": "node/10082038821"
+  },
+  {
+    "name": "Ahiritola 20 Pally",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Strand Road",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.5939774,
+    "lon": 88.3534226,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 1227,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    },
+    "_osm": "node/10082038823"
+  },
+  {
+    "name": "Pathuria Ghata 5 Pally",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Khelat Ghosh St",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.5885228,
+    "lon": 88.3574554,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 584,
+      "nameBn": "গিরিশ পার্ক"
+    },
+    "_osm": "node/10082038825"
+  },
+  {
+    "name": "37 Pally",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Brindaban Mullick Lane",
+    "neighbourhood": "Sealdah",
+    "lat": 22.5809599,
+    "lon": 88.3710078,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 1601,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    },
+    "_osm": "node/10082130638"
+  },
+  {
+    "name": "Trinayani",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Satin Sen Sarani",
+    "neighbourhood": "Maniktala",
+    "lat": 22.578853,
+    "lon": 88.3915351,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Phoolbagan",
+      "distanceMeters": 760,
+      "nameBn": "ফুলবাগান"
+    },
+    "_osm": "node/10082130641"
+  },
+  {
+    "name": "Potoldanga Sarodiya",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Baithakkhana Road",
+    "neighbourhood": "Sealdah",
+    "lat": 22.5694136,
+    "lon": 88.3674011,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Sealdah",
+      "distanceMeters": 397,
+      "nameBn": "শিয়ালদহ মেট্রো স্টেশন"
+    },
+    "_osm": "node/10082130646"
+  },
+  {
+    "name": "Adi Sammilati Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Gora Chand Rd",
+    "neighbourhood": "Park Circus",
+    "lat": 22.5467513,
+    "lon": 88.3691065,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Maidan",
+      "distanceMeters": 2108,
+      "nameBn": "ময়দান"
+    },
+    "_osm": "node/10082130654"
+  },
+  {
+    "name": "Park Circus",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Suhrawardy Avenue",
+    "neighbourhood": "Park Circus",
+    "lat": 22.5437045,
+    "lon": 88.3699468,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Maidan",
+      "distanceMeters": 2265,
+      "nameBn": "ময়দান"
+    },
+    "_osm": "node/10082374498"
+  },
+  {
+    "name": "Bhowanipore 76 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Kansaripara Road",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.5337356,
+    "lon": 88.3430496,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 302,
+      "nameBn": "নেতাজি ভবন"
+    },
+    "_osm": "node/10082374502"
+  },
+  {
+    "name": "Bhowanipore 75 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Ashutosh Mukhejee Road",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.532596,
+    "lon": 88.3454421,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 82,
+      "nameBn": "নেতাজি ভবন"
+    },
+    "_osm": "node/10082374503"
+  },
+  {
+    "name": "Bhowanipore 23 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Rani Sankari Lane",
+    "neighbourhood": "Hazra",
+    "lat": 22.5254629,
+    "lon": 88.344083,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 285,
+      "nameBn": "যতীন দাস পার্ক"
+    },
+    "_osm": "node/10082374505"
+  },
+  {
+    "name": "Bhowanipore 22 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Allenby Lane",
+    "neighbourhood": "Elgin Road",
+    "lat": 22.535396,
+    "lon": 88.3503716,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 519,
+      "nameBn": "নেতাজি ভবন"
+    },
+    "_osm": "node/10082374508"
+  },
+  {
+    "name": "Paddapukur Youth Association",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Rammoy Road",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.5293622,
+    "lon": 88.3497098,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 576,
+      "nameBn": "নেতাজি ভবন"
+    },
+    "_osm": "node/10082383691"
+  },
+  {
+    "name": "Bhowanipore Durgotsab",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Jagadananda Lane",
+    "neighbourhood": "Hazra",
+    "lat": 22.5262888,
+    "lon": 88.3515213,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 570,
+      "nameBn": "যতীন দাস পার্ক"
+    },
+    "_osm": "node/10082383692"
+  },
+  {
+    "name": "Durgabari Pratisthan",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Anil Maitra Road",
+    "neighbourhood": "Ballygunge",
+    "lat": 22.5257197,
+    "lon": 88.3695788,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 2380,
+      "nameBn": "যতীন দাস পার্ক"
+    },
+    "_osm": "node/10082383700"
+  },
+  {
+    "name": "Dakshin Kolkata Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Rash Behari Avenue",
+    "neighbourhood": "Hazra",
+    "lat": 22.5186043,
+    "lon": 88.3534806,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 808,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "node/10082383707"
+  },
+  {
+    "name": "Jana Mangal Samiti",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Iswar Ganguli Street",
+    "neighbourhood": "Chetla",
+    "lat": 22.5195544,
+    "lon": 88.3417885,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 512,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "node/10082383712"
+  },
+  {
+    "name": "66 Pally Durga Pujo",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Nepal Battacharjee Street",
+    "neighbourhood": "Kalighat",
+    "lat": 22.5182439,
+    "lon": 88.3428643,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 342,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "node/10082383713",
+    "nameBn": "৬৬ পল্লী"
+  },
+  {
+    "name": "Lake Avenue Sebak Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Sarat Chatterjee Avenue",
+    "neighbourhood": "Kalighat",
+    "lat": 22.5105709,
+    "lon": 88.3481522,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 462,
+      "nameBn": "রবীন্দ্র সরোবর"
+    },
+    "_osm": "node/10083307828"
+  },
+  {
+    "name": "Lake Gardens Peoples Association",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Lake Garden Road",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5059678,
+    "lon": 88.356109,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 1099,
+      "nameBn": "রবীন্দ্র সরোবর"
+    },
+    "_osm": "node/10083307831"
+  },
+  {
+    "name": "Sarat Chatterjee Park",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Purna Das Road",
+    "neighbourhood": "Gariahat",
+    "lat": 22.5180187,
+    "lon": 88.3581187,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 1267,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "node/10083307832"
+  },
+  {
+    "name": "Samaj Sebi Sangha",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Lake View Road",
+    "neighbourhood": "Lake Gardens",
+    "lat": 22.5147361,
+    "lon": 88.3559994,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 1070,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "node/10083307834"
+  },
+  {
+    "name": "Bhowanipore 68 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Ramesh Mitra Road",
+    "neighbourhood": "Bhowanipore",
+    "lat": 22.5288824,
+    "lon": 88.3462883,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Jatin Das Park",
+      "distanceMeters": 526,
+      "nameBn": "যতীন দাস পার্ক"
+    },
+    "_osm": "node/10083344094"
+  },
+  {
+    "name": "78 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Chetla Hat Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.5204514,
+    "lon": 88.3378755,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 910,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "node/10083344097"
+  },
+  {
+    "name": "Akalbodhan Durga Mandir",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Jainuddin Mistry Lane",
+    "neighbourhood": "Chetla",
+    "lat": 22.5157539,
+    "lon": 88.3366298,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 955,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "node/10083344101"
+  },
+  {
+    "name": "Bosepukur Sitala Mandir",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Dharmatala Road",
+    "neighbourhood": "Rashbehari Avenue",
+    "lat": 22.5191703,
+    "lon": 88.3847542,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "VIP Bazar",
+      "distanceMeters": 1329,
+      "nameBn": "ভি আই পি বাজার"
+    },
+    "_osm": "node/10083371974"
+  },
+  {
+    "name": "R R Plot",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Anandapur High Road",
+    "neighbourhood": "Santoshpur",
+    "lat": 22.50915,
+    "lon": 88.404764,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kavi Sukanta",
+      "distanceMeters": 577,
+      "nameBn": "কবি সুকান্ত"
+    },
+    "_osm": "node/10083371975"
+  },
+  {
+    "name": "Dhakuria Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Dr Nagen Ghosh Lane",
+    "neighbourhood": "Kasba",
+    "lat": 22.5100279,
+    "lon": 88.3719874,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kavi Sukanta",
+      "distanceMeters": 3026,
+      "nameBn": "কবি সুকান্ত"
+    },
+    "_osm": "node/10083413842"
+  },
+  {
+    "name": "Babubagan",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Maharaja Tagore Road",
+    "neighbourhood": "Rabindra Sarovar",
+    "lat": 22.507928,
+    "lon": 88.3686357,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2379,
+      "nameBn": "রবীন্দ্র সরোবর"
+    },
+    "_osm": "node/10083413843"
+  },
+  {
+    "name": "Abasarika",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Beni Bannerjee Avenue",
+    "neighbourhood": "Kasba",
+    "lat": 22.5072693,
+    "lon": 88.3702506,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Rabindra Sarobar",
+      "distanceMeters": 2543,
+      "nameBn": "রবীন্দ্র সরোবর"
+    },
+    "_osm": "node/10083413844"
+  },
+  {
+    "name": "Regent Park Housing",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Raipur Road",
+    "neighbourhood": "Golf Green",
+    "lat": 22.4893266,
+    "lon": 88.3673965,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 2386,
+      "nameBn": "নেতাজি"
+    },
+    "_osm": "node/10083540460"
+  },
+  {
+    "name": "Rabindra Pally Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Baghajatin Station Road",
+    "neighbourhood": "Baghajatin",
+    "lat": 22.4825338,
+    "lon": 88.3824095,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Satyajit Ray",
+      "distanceMeters": 1078,
+      "nameBn": "সত্যজিৎ রায়"
+    },
+    "_osm": "node/10083540463"
+  },
+  {
+    "name": "Azadgarh Sebak Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Graham Road",
+    "neighbourhood": "Golf Green",
+    "lat": 22.4879099,
+    "lon": 88.3560969,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1291,
+      "nameBn": "নেতাজি"
+    },
+    "_osm": "node/10083540470"
+  },
+  {
+    "name": "Adarsha Samiti",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Mahatma Gandhi Road",
+    "neighbourhood": "Putiary",
+    "lat": 22.4761047,
+    "lon": 88.3342746,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1322,
+      "nameBn": "নেতাজি"
+    },
+    "_osm": "node/10083642473"
+  },
+  {
+    "name": "Barisha Netaji Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Janakalyan Rd",
+    "neighbourhood": "Barisha",
+    "lat": 22.4857256,
+    "lon": 88.315341,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 271,
+      "nameBn": "বেহালা চৌরাস্তা"
+    },
+    "_osm": "node/10083642475"
+  },
+  {
+    "name": "Sitalatala Kishore Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Kailash Ghosh Road",
+    "neighbourhood": "Barisha",
+    "lat": 22.4810849,
+    "lon": 88.3215804,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 1094,
+      "nameBn": "বেহালা চৌরাস্তা"
+    },
+    "_osm": "node/10083642476"
+  },
+  {
+    "name": "Amardeep Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Motilal Gupta Road",
+    "neighbourhood": "Putiary",
+    "lat": 22.4842736,
+    "lon": 88.3298842,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1696,
+      "nameBn": "নেতাজি"
+    },
+    "_osm": "node/10083642477"
+  },
+  {
+    "name": "Mitali Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "SN Roy Road",
+    "neighbourhood": "Chetla",
+    "lat": 22.5046423,
+    "lon": 88.3324416,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 1284,
+      "nameBn": "তারাতলা"
+    },
+    "_osm": "node/10083642487"
+  },
+  {
+    "name": "Sahapur",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "SN Roy Road",
+    "neighbourhood": "Behala",
+    "lat": 22.50588,
+    "lon": 88.326403,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 650,
+      "nameBn": "তারাতলা"
+    },
+    "_osm": "node/10083642488"
+  },
+  {
+    "name": "Pally Unnayan Samiti",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Putiary Banerjee Para Road",
+    "neighbourhood": "Netaji Nagar",
+    "lat": 22.4781501,
+    "lon": 88.3421944,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 503,
+      "nameBn": "নেতাজি"
+    },
+    "_osm": "node/10083645573"
+  },
+  {
+    "name": "Diamond Park Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Haridevpur",
+    "lat": 22.4487918,
+    "lon": 88.3039271,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Joka",
+      "distanceMeters": 451,
+      "nameBn": "জোকা"
+    },
+    "_osm": "node/10083645574"
+  },
+  {
+    "name": "Sodepur Pragati Sangha",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": null,
+    "neighbourhood": "Putiary",
+    "lat": 22.4816097,
+    "lon": 88.3317151,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji",
+      "distanceMeters": 1469,
+      "nameBn": "নেতাজি"
+    },
+    "_osm": "node/10083645582"
+  },
+  {
+    "name": "Barisha Dakshin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Motilal Gupta Rd",
+    "neighbourhood": "Putiary",
+    "lat": 22.4813492,
+    "lon": 88.3250527,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 1373,
+      "nameBn": "বেহালা চৌরাস্তা"
+    },
+    "_osm": "node/10083645584"
+  },
+  {
+    "name": "Sahapur Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Shapur Sarani",
+    "neighbourhood": "Chetla",
+    "lat": 22.51163,
+    "lon": 88.328018,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Taratala",
+      "distanceMeters": 898,
+      "nameBn": "তারাতলা"
+    },
+    "_osm": "node/10084831369"
+  },
+  {
+    "name": "Debdaru Fatak",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Arya Samiti Road",
+    "neighbourhood": "Behala",
+    "lat": 22.5027342,
+    "lon": 88.317498,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 442,
+      "nameBn": "বেহালা বাজার"
+    },
+    "_osm": "node/10084831374"
+  },
+  {
+    "name": "Notunpara Sarbojanin",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Biren Roy Road West",
+    "neighbourhood": "Barisha",
+    "lat": 22.4844259,
+    "lon": 88.3067416,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 756,
+      "nameBn": "বেহালা চৌরাস্তা"
+    },
+    "_osm": "node/10084831383"
+  },
+  {
+    "name": "Barisha Yuba Brinda",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road",
+    "neighbourhood": "Barisha",
+    "lat": 22.4857265,
+    "lon": 88.3120153,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Behala Chowrasta",
+      "distanceMeters": 229,
+      "nameBn": "বেহালা চৌরাস্তা"
+    },
+    "_osm": "node/10084831385"
+  },
+  {
+    "name": "Khidirpur 26 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Jagannath Sarkar Lane",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.542862,
+    "lon": 88.323931,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2637,
+      "nameBn": "মাঝেরহাট"
+    },
+    "_osm": "node/10084950332"
+  },
+  {
+    "name": "Kidderpore 25 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Manastala Row",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.5384821,
+    "lon": 88.3266024,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Netaji Bhavan",
+      "distanceMeters": 2070,
+      "nameBn": "নেতাজি ভবন"
+    },
+    "_osm": "node/10084950338"
+  },
+  {
+    "name": "Kidderpore 74 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Manali Banerjee Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.5397803,
+    "lon": 88.3251219,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2299,
+      "nameBn": "মাঝেরহাট"
+    },
+    "_osm": "node/10084950339"
+  },
+  {
+    "name": "Kidderpore 75 Pally",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Manali Banerjee Road",
+    "neighbourhood": "Khidderpore",
+    "lat": 22.5402955,
+    "lon": 88.3252828,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Majerhat",
+      "distanceMeters": 2358,
+      "nameBn": "মাঝেরহাট"
+    },
+    "_osm": "node/10084950340"
+  },
+  {
+    "name": "Tala Barowari",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Tala Flyover",
+    "neighbourhood": "Shyambazar",
+    "lat": 22.6068111,
+    "lon": 88.3748754,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 656,
+      "nameBn": "শ্যামবাজার"
+    },
+    "_osm": "node/11271390647"
+  },
+  {
+    "name": "Kashi Bose Lane",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Hari Ghose Street",
+    "neighbourhood": "Shyambazar",
+    "lat": 22.591006,
+    "lon": 88.368965,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 753,
+      "nameBn": "গিরিশ পার্ক"
+    },
+    "_osm": "node/11271655876"
+  },
+  {
+    "name": "Nalin Sarkar Street Durgotsav",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Nalani Sarkar Street",
+    "neighbourhood": "Shyambazar",
+    "lat": 22.5953461,
+    "lon": 88.3733961,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Shyambazar",
+      "distanceMeters": 672,
+      "nameBn": "শ্যামবাজার"
+    },
+    "_osm": "node/11271732101"
+  },
+  {
+    "name": "Sreebhumi Sporting Club",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Dakshindari Road",
+    "neighbourhood": "Belgachia",
+    "lat": 22.600318,
+    "lon": 88.40259,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Central Park",
+      "distanceMeters": 1729,
+      "nameBn": "সেন্ট্রাল পার্ক"
+    },
+    "_osm": "nominatim:leisure=park Sreebhumi Sporting club"
+  },
+  {
+    "name": "Deshapriya Park",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Rash Behari Avenue",
+    "neighbourhood": "Hazra",
+    "lat": 22.518435,
+    "lon": 88.353515,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Kalighat",
+      "distanceMeters": 807,
+      "nameBn": "কালীঘাট"
+    },
+    "_osm": "nominatim:leisure=park Deshapriya Park"
+  },
+  {
+    "name": "Hedua Park",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Urquhart Square",
+    "neighbourhood": "Jorasanko",
+    "lat": 22.587744,
+    "lon": 88.368849,
+    "geocodeMethod": "osm",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 610,
+      "nameBn": "গিরিশ পার্ক"
+    },
+    "_osm": "nominatim:leisure=park Hedua Park"
+  },
+  {
+    "name": "Tala Prattoy",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Tara Sankar Sarani, Paikpara",
+    "neighbourhood": null,
+    "lat": 22.608923,
+    "lon": 88.382266,
+    "geocodeMethod": "geocoded",
+    "nameBn": "টালা প্রত্যয়",
+    "nearestMetro": {
+      "name": "Belgachia",
+      "distanceMeters": 539,
+      "nameBn": "বেলগাছিয়া"
+    }
+  },
+  {
+    "name": "Sovabazar Rajbari",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Raja Nabakrishna Street, Sovabazar",
+    "neighbourhood": null,
+    "lat": 22.596826,
+    "lon": 88.367193,
+    "geocodeMethod": "geocoded",
+    "nameBn": "শোভাবাজার রাজবাড়ি",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 230,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    }
+  },
+  {
+    "name": "Hatibagan Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Aravinda Sarani, Hatibagan",
+    "neighbourhood": null,
+    "lat": 22.595,
+    "lon": 88.3705,
+    "geocodeMethod": "verified",
+    "nameBn": "হাতিবাগান সর্বজনীন",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 553,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    }
+  },
+  {
+    "name": "Chaltabagan Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Raja Dinendra Street, Maniktala Lohapatty",
+    "neighbourhood": null,
+    "lat": 22.5851842,
+    "lon": 88.3720808,
+    "geocodeMethod": "osm",
+    "nameBn": "চালতাবাগান সর্বজনীন",
+    "nearestMetro": {
+      "name": "Girish Park",
+      "distanceMeters": 963,
+      "nameBn": "গিরিশ পার্ক"
+    }
+  },
+  {
+    "name": "Kumartuli Sarbojanin",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Banamali Sarkar Street, Kumartuli",
+    "neighbourhood": null,
+    "lat": 22.5989,
+    "lon": 88.36144,
+    "geocodeMethod": "verified",
+    "nameBn": "কুমোরটুলি সর্বজনীন",
+    "nearestMetro": {
+      "name": "Shobhabazar Sutanuti",
+      "distanceMeters": 512,
+      "nameBn": "শোভাবাজার সুতানুটি"
+    }
+  },
+  {
+    "name": "Beleghata 33 Pally",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "CIT Road, Beleghata",
+    "neighbourhood": null,
+    "lat": 22.5643,
+    "lon": 88.4028,
+    "geocodeMethod": "geocoded",
+    "nameBn": "বেলেঘাটা ৩৩ পল্লী",
+    "nearestMetro": {
+      "name": "Phoolbagan",
+      "distanceMeters": 1556,
+      "nameBn": "ফুলবাগান"
+    }
+  },
+  {
+    "name": "Dum Dum Park Tarun Sangha",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "225/1 Dum Dum Park",
+    "neighbourhood": null,
+    "lat": 22.60999,
+    "lon": 88.41162,
+    "geocodeMethod": "verified",
+    "nameBn": "দমদম পার্ক তরুণ সংঘ",
+    "nearestMetro": {
+      "name": "Dum Dum",
+      "distanceMeters": 2285,
+      "nameBn": "দমদম"
+    }
+  },
+  {
+    "name": "Dum Dum Park Bharat Chakra",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Dum Dum Park, near Tank 3",
+    "neighbourhood": null,
+    "lat": 22.6108,
+    "lon": 88.41456,
+    "geocodeMethod": "verified",
+    "nameBn": "দমদম পার্ক ভারতচক্র",
+    "nearestMetro": {
+      "name": "Dum Dum",
+      "distanceMeters": 2502,
+      "nameBn": "দমদম"
+    }
+  },
+  {
+    "name": "AJ Block Durga Puja",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "AJ Block, Salt Lake Sector II",
+    "neighbourhood": "Salt Lake",
+    "lat": 22.592155,
+    "lon": 88.428351,
+    "geocodeMethod": "geocoded",
+    "nameBn": "সল্টলেক এ-জে ব্লক দুর্গাপূজা",
+    "nearestMetro": {
+      "name": "Karunamoyee",
+      "distanceMeters": 950,
+      "nameBn": "করুণাময়ী"
+    }
+  },
+  {
+    "name": "AK Block Durga Puja",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "AK Block, Salt Lake Sector II",
+    "neighbourhood": "Salt Lake",
+    "lat": 22.5912,
+    "lon": 88.4258,
+    "geocodeMethod": "geocoded",
+    "nameBn": "সল্টলেক এ-কে ব্লক দুর্গাপূজা",
+    "nearestMetro": {
+      "name": "Salt Lake Sector V",
+      "distanceMeters": 1189,
+      "nameBn": "সল্টলেক সেক্টর V"
+    }
+  },
+  {
+    "name": "BD Block Durga Puja",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "BD Block, Salt Lake Sector I",
+    "neighbourhood": "Salt Lake",
+    "lat": 22.5862,
+    "lon": 88.4088,
+    "geocodeMethod": "geocoded",
+    "nameBn": "সল্টলেক বি-ডি ব্লক দুর্গাপূজা",
+    "nearestMetro": {
+      "name": "Central Park",
+      "distanceMeters": 847,
+      "nameBn": "সেন্ট্রাল পার্ক"
+    }
+  },
+  {
+    "name": "New Town Sarbojanin",
+    "zone": "II",
+    "zoneName": "South & South East Kolkata",
+    "nearStreet": "Action Area I, New Town",
+    "neighbourhood": null,
+    "lat": 22.5838,
+    "lon": 88.4635,
+    "geocodeMethod": "geocoded",
+    "nameBn": "নিউ টাউন সর্বজনীন",
+    "nearestMetro": {
+      "name": "Salt Lake Sector V",
+      "distanceMeters": 3547,
+      "nameBn": "সল্টলেক সেক্টর V"
+    }
+  },
+  {
+    "name": "Arjunpur Amra Sabai",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Arjunpur, Baguiati",
+    "neighbourhood": null,
+    "lat": 22.62354,
+    "lon": 88.42665,
+    "geocodeMethod": "verified",
+    "nameBn": "অর্জুনপুর আমরা সবাই",
+    "nearestMetro": {
+      "name": "Jessore Road",
+      "distanceMeters": 1778,
+      "nameBn": "যশোহর রোড"
+    }
+  },
+  {
+    "name": "Behala Friends",
+    "zone": "IV",
+    "zoneName": "South Suburban & South West (Jadavpur & Behala Division)",
+    "nearStreet": "Diamond Harbour Road, Behala",
+    "neighbourhood": null,
+    "lat": 22.50136,
+    "lon": 88.32016,
+    "geocodeMethod": "verified",
+    "nameBn": "বেহালা ফ্রেন্ডস",
+    "nearestMetro": {
+      "name": "Behala Bazar",
+      "distanceMeters": 406,
+      "nameBn": "বেহালা বাজার"
+    }
+  },
+  {
+    "name": "Wellington Nagarik Kalyan Samity",
+    "zone": "I",
+    "zoneName": "North & Central Kolkata",
+    "nearStreet": "Bowbazar, near Raja Subodh Mallick Square",
+    "neighbourhood": null,
+    "lat": 22.5632601,
+    "lon": 88.3604397,
+    "geocodeMethod": "geocoded",
+    "nameBn": "ওয়েলিংটন নাগরিক কল্যাণ সমিতি",
+    "nearestMetro": {
+      "name": "Chandni Chowk",
+      "distanceMeters": 768,
+      "nameBn": "চাঁদনি চক"
+    }
+  }
+]

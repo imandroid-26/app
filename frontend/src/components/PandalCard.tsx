@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Heart, Navigation, TrainFront } from "lucide-react";
 import type { Pandal } from "@/lib/types";
+import { hasPin } from "@/lib/types";
 import { ZONE_BY_CODE } from "@/lib/pandals";
 import { formatDistance, haversineMeters } from "@/lib/geo";
 import { dirUrlFor } from "@/lib/directions";
@@ -19,7 +20,7 @@ export function PandalCard({ pandal: p, userCoords }: Props) {
   const isFav = fav.isFav(p.id);
   const zone = ZONE_BY_CODE[p.zone];
   const straight =
-    userCoords ? haversineMeters(userCoords, { lat: p.lat, lon: p.lon }) : null;
+    userCoords && hasPin(p) ? haversineMeters(userCoords, p) : null;
 
   return (
     <article
@@ -85,18 +86,30 @@ export function PandalCard({ pandal: p, userCoords }: Props) {
           {p.metroLine.length > 0 && (
             <span className="text-muted-foreground/80"> · {p.metroLine.join(" & ")}</span>
           )}
-          {p.distanceFromMetroKm != null && (
-            <span className="text-foreground/80"> · {formatDistance(p.distanceFromMetroKm * 1000)}</span>
-          )}
+          {p.distanceFromMetroKm != null ? (
+            <span className="text-foreground/80" title="Routed walking distance (OpenStreetMap foot routing)">
+              {" "}· {formatDistance(p.distanceFromMetroKm * 1000)} walk
+            </span>
+          ) : p.metroStraightLineKm != null ? (
+            <span className="text-foreground/70" title="Straight-line distance — the street walk is longer">
+              {" "}· {formatDistance(p.metroStraightLineKm * 1000)} straight-line
+            </span>
+          ) : null}
         </span>
       </p>
 
-      {straight != null && (
+      {userCoords && (
         <p className="text-xs text-muted-foreground">
-          <span data-testid="pandal-card-straight-distance" className="font-medium text-foreground/80">
-            {formatDistance(straight)}
-          </span>{" "}
-          straight-line from you
+          {straight != null ? (
+            <>
+              <span data-testid="pandal-card-straight-distance" className="font-medium text-foreground/80">
+                {formatDistance(straight)}
+              </span>{" "}
+              straight-line from you
+            </>
+          ) : (
+            <span data-testid="pandal-card-location-unverified">Location not verified — no distance shown</span>
+          )}
         </p>
       )}
 

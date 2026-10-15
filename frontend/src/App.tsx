@@ -9,6 +9,7 @@ import PandalDetail from "@/pages/PandalDetail";
 import MyPujas from "@/pages/MyPujas";
 import Planner from "@/pages/Planner";
 import MapPage from "@/pages/MapPage";
+import Guide from "@/pages/Guide";
 import NotFound from "@/pages/NotFound";
 
 function ScrollToTop() {
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/my-pujas" element={<MyPujas />} />
           <Route path="/planner" element={<Planner />} />
           <Route path="/map" element={<MapPage />} />
+          <Route path="/guide" element={<Guide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

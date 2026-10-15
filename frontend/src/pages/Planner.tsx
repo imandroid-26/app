@@ -74,9 +74,9 @@ export default function Planner() {
   );
 
   const legs = useMemo(() => routeLegs(start, ordered), [start, ordered]);
-  const total = legs.reduce((a, b) => a + b, 0);
+  const total = legs.reduce<number>((a, b) => a + (b ?? 0), 0);
   const segments = useMemo(() => multiStopLinks(start, ordered, mode), [start, ordered, mode]);
-  const approxStops = ordered.filter((p) => p && p.locationAccuracy === "approximate");
+  const approxStops = ordered.filter((p) => p.locationAccuracy !== "exact");
 
   const suggestions = useMemo(() => {
     const q = suggest.trim().toLowerCase();
@@ -197,15 +197,16 @@ export default function Planner() {
                           {p.neighbourhood} · {p.nearestMetro}
                         </span>
                       </span>
-                      {(() => {
-                        // leg arriving at this stop: from the start point (if set) or from the previous stop
-                        const legIdx = start ? i : i - 1;
-                        return legIdx >= 0 && legs[legIdx] != null ? (
-                          <span className="shrink-0 text-xs text-muted-foreground" title="Straight-line from the previous point">
-                            {formatDistance(legs[legIdx])}
-                          </span>
-                        ) : null;
-                      })()}
+                      {legs[i] != null && (
+                        <span className="shrink-0 text-xs text-muted-foreground" title="Straight-line from the previous point">
+                          {formatDistance(legs[i] as number)}
+                        </span>
+                      )}
+                      {p.locationAccuracy === "unknown" && (
+                        <span className="shrink-0 text-xs text-amber-700 dark:text-amber-300" title="No verified position — not ordered by distance">
+                          no pin
+                        </span>
+                      )}
                       <span className="flex shrink-0 items-center gap-0.5">
                         <button
                           type="button"

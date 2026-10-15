@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Filter, List, Map as MapIcon, MapPinOff, RotateCcw, Search, TrainFront } from "lucide-react";
 import type { VerificationStatus } from "@/lib/types";
-import { METRO_NAMES, PANDALS, ZONES, searchPandals } from "@/lib/pandals";
+import { METRO_NAMES, NEIGHBOURHOODS, PANDALS, ZONES, searchPandals } from "@/lib/pandals";
+import { hasPin } from "@/lib/types";
 import { PandalCard } from "@/components/PandalCard";
 import { PandalMap } from "@/components/PandalMap";
 import { useGeoLocation } from "@/lib/useGeo";
@@ -41,6 +42,7 @@ export default function Explore() {
   const zones = useMemo(() => parseCsv(zonesRaw), [zonesRaw]);
   const statuses = useMemo(() => parseCsv(statusesRaw), [statusesRaw]);
   const metro = params.get("metro") ?? "";
+  const locality = params.get("locality") ?? "";
   const only2026 = params.get("p2026") === "1";
   const sort = (params.get("sort") ?? "name") as SortValue;
   const view = params.get("view") === "map" ? "map" : "list";
@@ -84,21 +86,22 @@ export default function Explore() {
     if (zones.length) out = out.filter((p) => zones.includes(p.zone));
     if (statuses.length) out = out.filter((p) => statuses.includes(p.verificationStatus));
     if (metro) out = out.filter((p) => p.nearestMetro === metro);
+    if (locality) out = out.filter((p) => p.neighbourhood === locality);
     if (only2026) out = out.filter((p) => p.puja2026Status === "confirmed");
     if (sort === "name") out = [...out].sort((a, b) => a.name.localeCompare(b.name));
     if (sort === "zone") out = [...out].sort((a, b) => a.zone.localeCompare(b.zone) || a.name.localeCompare(b.name));
     if (sort === "metro") out = [...out].sort((a, b) => (a.nearestMetro ?? "").localeCompare(b.nearestMetro ?? "") || a.name.localeCompare(b.name));
     if (sort === "distance") {
       if (geo.coords) {
-        out = [...out].sort(
-          (a, b) => haversineMeters(geo.coords!, { lat: a.lat, lon: a.lon }) - haversineMeters(geo.coords!, { lat: b.lat, lon: b.lon }),
-        );
+        const me = geo.coords;
+        const d = (p: (typeof out)[number]) => (hasPin(p) ? haversineMeters(me, p) : Number.POSITIVE_INFINITY);
+        out = [...out].sort((a, b) => d(a) - d(b) || a.name.localeCompare(b.name));
       }
     }
     return out;
-  }, [base, zones, statuses, metro, only2026, sort, geo.coords]);
+  }, [base, zones, statuses, metro, locality, only2026, sort, geo.coords]);
 
-  const hasFilters = q !== "" || zones.length > 0 || statuses.length > 0 || metro !== "" || only2026;
+  const hasFilters = q !== "" || zones.length > 0 || statuses.length > 0 || metro !== "" || locality !== "" || only2026;
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -262,6 +265,21 @@ export default function Explore() {
               </option>
             ))}
           </select>
+          <span className="ml-2 text-muted-foreground">Locality:</span>
+          <select
+            aria-label="Filter by locality"
+            data-testid="explore-locality-select"
+            value={locality}
+            onChange={(e) => update({ locality: e.target.value || null })}
+            className="h-8 rounded-md border border-input bg-background px-2 text-xs focus:border-ring focus:outline-none"
+          >
+            <option value="">{`All localities (${NEIGHBOURHOODS.length})`}</option>
+            {NEIGHBOURHOODS.map((m) => (
+              <option key={m} value={m}>
+                {m}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
@@ -276,10 +294,11 @@ export default function Explore() {
               userCoords={geo.coords}
             />
           </div>
-          <p className="text-xs text-muted-foreground">
-            Map shows pins with coordinates ({filtered.filter((p) => p.locationAccuracy === "exact").length} exact,
-            {" "}{filtered.filter((p) => p.locationAccuracy === "approximate").length} approximate neighbourhood
-            anchors, drawn hollow). Records without verified pins appear in the list view only.
+          <p className="text-xs text-muted-foreground" data-testid="explore-map-pin-note">
+            Map shows {filtered.filter((p) => p.locationAccuracy === "exact").length} verified pins and{" "}
+            {filtered.filter((p) => p.locationAccuracy === "approximate").length} approximate ones (drawn hollow).{" "}
+            {filtered.filter((p) => p.locationAccuracy === "unknown").length} matching pandals have no verified
+            location and appear in the list view only.
           </p>
         </div>
       ) : filtered.length === 0 ? (

@@ -16,7 +16,16 @@ THROTTLE = timedelta(minutes=10)  # one report per device per pandal per 10 min
 LEVEL_SCORE = {"easy": 0, "busy": 1, "packed": 2}
 
 _DATA = Path(__file__).resolve().parents[2] / "frontend/src/data/pandals.json"
-PANDAL_IDS = {r["id"] for r in json.loads(_DATA.read_text(encoding="utf-8"))}
+_ids_cache: dict = {"mtime": None, "ids": set()}
+
+
+def pandal_ids() -> set:
+    """Valid pandal ids, reloaded whenever the generated dataset changes."""
+    mtime = _DATA.stat().st_mtime
+    if _ids_cache["mtime"] != mtime:
+        _ids_cache["ids"] = {r["id"] for r in json.loads(_DATA.read_text(encoding="utf-8"))}
+        _ids_cache["mtime"] = mtime
+    return _ids_cache["ids"]
 
 
 def _aware(dt: datetime) -> datetime:
@@ -25,7 +34,7 @@ def _aware(dt: datetime) -> datetime:
 
 @router.post("/crowd/reports", response_model=CrowdReport, status_code=201)
 async def create_report(body: CrowdReportCreate):
-    if body.pandal_id not in PANDAL_IDS:
+    if body.pandal_id not in pandal_ids():
         raise HTTPException(status_code=404, detail="pandal not found")
     now = datetime.now(timezone.utc)
     recent = await db.crowd_reports.find_one(
@@ -74,7 +83,7 @@ async def crowd_summary():
 
 @router.get("/crowd/summary/{pandal_id}", response_model=CrowdSummary)
 async def crowd_summary_one(pandal_id: str):
-    if pandal_id not in PANDAL_IDS:
+    if pandal_id not in pandal_ids():
         raise HTTPException(status_code=404, detail="pandal not found")
     now = datetime.now(timezone.utc)
     docs = await db.crowd_reports.find(
